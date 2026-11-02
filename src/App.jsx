@@ -15,7 +15,7 @@ export default function App() {
 
   const getViewFromHash = () => {
     const hash = window.location.hash
-    if (hash === '#our-story') return 'story'
+    if (hash === '#our-journey') return 'story'
     if (hash === '#about') return 'about'
     if (hash === '#blog') return 'blog'
     if (hash === '#privacy-policy' || hash === '#privacy') return 'privacy'
@@ -43,7 +43,7 @@ export default function App() {
   const navigate = (view) => {
     setCurrentView(view)
     let targetHash = ''
-    if (view === 'story') targetHash = 'our-story'
+    if (view === 'story') targetHash = 'our-journey'
     else if (view === 'privacy') targetHash = 'privacy-policy'
     else if (view === 'terms') targetHash = 'terms-and-conditions'
     else if (view !== 'home') targetHash = view

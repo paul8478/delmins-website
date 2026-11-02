@@ -5,7 +5,7 @@ export default function Footer({ navigate }) {
       navigate(view)
     } else {
       let targetHash = ''
-      if (view === 'story') targetHash = 'our-story'
+      if (view === 'story') targetHash = 'our-journey'
       else if (view === 'privacy') targetHash = 'privacy-policy'
       else if (view === 'terms') targetHash = 'terms-and-conditions'
       else if (view !== 'home') targetHash = view
@@ -41,8 +41,8 @@ export default function Footer({ navigate }) {
           <a href="#top" onClick={(e) => handleNav(e, 'home')}>
             Home
           </a>
-          <a href="#our-story" onClick={(e) => handleNav(e, 'story')}>
-            Our Story
+          <a href="#our-journey" onClick={(e) => handleNav(e, 'story')}>
+            Our Journey
           </a>
           <a href="#blog" onClick={(e) => handleNav(e, 'blog')}>
             Chronicles / Blog

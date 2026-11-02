@@ -141,17 +141,17 @@ export default function Hero({ ready }) {
           </motion.a>
           <motion.a
             className="btn btn-ghost"
-            href="#our-story"
+            href="#our-journey"
             onClick={(e) => {
               e.preventDefault()
-              window.location.hash = 'our-story'
+              window.location.hash = 'our-journey'
               window.dispatchEvent(new HashChangeEvent('hashchange'))
             }}
             whileHover={{ scale: 1.06, y: -4 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
           >
-            Our Story
+            Our Journey
           </motion.a>
         </motion.div>
 
