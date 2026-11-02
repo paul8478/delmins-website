@@ -326,3 +326,70 @@ export function VisionPillar({ icon, title, desc }) {
     </div>
   )
 }
+
+/**
+ * Thin gold line-art bowl of pani puri, for the footer's brand column.
+ */
+export function FooterPuriBowlIcon({ className = '', size = 80 }) {
+  return (
+    <svg
+      viewBox="0 0 100 86"
+      width={size}
+      height={size}
+      className={`footer-retro-icon-svg ${className}`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14 42 C14 42 18 72 50 72 C82 72 86 42 86 42 Z"
+        stroke="#D9A85F"
+        strokeWidth="2"
+        strokeLinejoin="round"
+      />
+      <path d="M10 42 H90" stroke="#D9A85F" strokeWidth="2" strokeLinecap="round" />
+      <circle cx="30" cy="30" r="8" fill="#B4823E" fillOpacity="0.25" stroke="#D9A85F" strokeWidth="1.6" />
+      <circle cx="47" cy="22" r="9" fill="#B4823E" fillOpacity="0.25" stroke="#D9A85F" strokeWidth="1.6" />
+      <circle cx="65" cy="29" r="8" fill="#B4823E" fillOpacity="0.25" stroke="#D9A85F" strokeWidth="1.6" />
+      <circle cx="56" cy="40" r="7" fill="#B4823E" fillOpacity="0.25" stroke="#D9A85F" strokeWidth="1.6" />
+      <path
+        d="M78 16 C82 10 90 10 92 16 C90 20 83 22 78 16 Z"
+        fill="#7FA66A"
+        fillOpacity="0.5"
+        stroke="#D9A85F"
+        strokeWidth="1.2"
+      />
+      <path d="M84 16 C86 13 89 12 91 14" stroke="#D9A85F" strokeWidth="1" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+/**
+ * Thin gold line-art plate of pani puri with a side bowl of chutney,
+ * for the footer's slogan column.
+ */
+export function FooterPuriPlateIcon({ className = '', size = 100 }) {
+  return (
+    <svg
+      viewBox="0 0 140 86"
+      width={size}
+      height={size}
+      className={`footer-retro-icon-svg ${className}`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <ellipse cx="54" cy="58" rx="50" ry="14" stroke="#D9A85F" strokeWidth="2" />
+      <ellipse cx="54" cy="55" rx="38" ry="9" stroke="#D9A85F" strokeWidth="1.2" strokeDasharray="2 2" />
+      <circle cx="30" cy="38" r="9" fill="#B4823E" fillOpacity="0.25" stroke="#D9A85F" strokeWidth="1.6" />
+      <circle cx="50" cy="28" r="10" fill="#B4823E" fillOpacity="0.25" stroke="#D9A85F" strokeWidth="1.6" />
+      <circle cx="71" cy="36" r="9" fill="#B4823E" fillOpacity="0.25" stroke="#D9A85F" strokeWidth="1.6" />
+      <circle cx="56" cy="45" r="8" fill="#B4823E" fillOpacity="0.25" stroke="#D9A85F" strokeWidth="1.6" />
+      <path
+        d="M106 44 C100 44 96 49 96 55 C96 61 100 65 108 65 C116 65 120 61 120 55 C120 49 116 44 106 44 Z"
+        stroke="#D9A85F"
+        strokeWidth="2"
+      />
+      <path d="M100 52 C104 50 112 50 116 52" stroke="#D9A85F" strokeWidth="1.2" strokeLinecap="round" />
+      <path d="M22 18 C22 18 24 12 20 8 M30 16 C30 16 30 10 27 5 M38 18 C38 18 41 13 40 8" stroke="#D9A85F" strokeWidth="1" strokeLinecap="round" opacity="0.6" />
+    </svg>
+  )
+}
