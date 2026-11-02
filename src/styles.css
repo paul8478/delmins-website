@@ -3321,7 +3321,7 @@ section {
 
   font-size: clamp(38px, 5.2vw, 62px);
   font-weight: 700;
-  color: #1a3c2c;
+  color: #4a150e;
   line-height: 1.15;
   letter-spacing: -0.01em;
   margin: 0;
@@ -3329,7 +3329,7 @@ section {
 
 .vm-cards-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.35fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: clamp(28px, 4vw, 48px);
   align-items: stretch;
 }
@@ -3360,6 +3360,68 @@ section {
   border-color: #dfbf8d;
 }
 
+/* Ornamental retro corner brackets (SVGs from RetroCornerBracket) */
+.vm-corner-bracket {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.vm-corner-top-left {
+  top: 14px;
+  left: 14px;
+}
+
+.vm-corner-top-right {
+  top: 14px;
+  right: 14px;
+}
+
+.vm-corner-bottom-left {
+  bottom: 14px;
+  left: 14px;
+}
+
+.vm-corner-bottom-right {
+  bottom: 14px;
+  right: 14px;
+}
+
+/* Vintage postmark / wax-seal stamp affixed to the card's top-right edge */
+.vm-stamp-wrapper {
+  position: absolute;
+  top: -20px;
+  right: clamp(22px, 4vw, 44px);
+  transform: rotate(6deg);
+  filter: drop-shadow(0 6px 14px rgba(90, 42, 23, 0.2));
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Small uppercase tag line above the card title */
+.vm-card-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+  padding-right: 96px;
+}
+
+.vm-eyebrow-star {
+  color: var(--saffron);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.vm-eyebrow-text {
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8c5b24;
+}
+
 .vm-card-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: clamp(30px, 3.5vw, 42px);
@@ -3379,7 +3441,51 @@ section {
   font-style: normal;
 }
 
+/* Centered flourish divider between the title and the lead quote */
+.vm-card-flourish {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 20px;
+}
+
+.vm-flourish-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(180, 130, 62, 0.5), rgba(180, 130, 62, 0.08));
+}
+
+.vm-card-flourish .vm-flourish-line:last-child {
+  background: linear-gradient(90deg, rgba(180, 130, 62, 0.08), rgba(180, 130, 62, 0.5));
+}
+
+.vm-flourish-symbol {
+  flex-shrink: 0;
+  color: var(--saffron);
+  font-size: 14px;
+}
+
+/* Lead manifesto quote with an oversized illuminated quote mark */
+.vm-quote-frame {
+  position: relative;
+  padding-left: 26px;
+}
+
+.vm-quote-mark {
+  position: absolute;
+  top: -20px;
+  left: -8px;
+  font-family: Georgia, serif;
+  font-size: 68px;
+  line-height: 1;
+  color: var(--saffron);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
 .vm-card-lead {
+  position: relative;
+  z-index: 1;
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
   font-size: clamp(16px, 1.3vw, 18px);
   font-weight: 600;
@@ -3396,6 +3502,96 @@ section {
   color: rgba(33, 28, 24, 0.82);
   line-height: 1.75;
   margin: 0;
+}
+
+/* Three retro pillars balancing the Vision card's height */
+.vm-vision-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 26px 0 0;
+  padding-top: 24px;
+  border-top: 1px dashed rgba(180, 130, 62, 0.35);
+}
+
+.vm-pillar-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.vm-pillar-icon-box {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+  border-radius: 50%;
+  background: rgba(11, 59, 42, 0.06);
+  border: 1px solid rgba(184, 134, 40, 0.3);
+}
+
+.vm-pillar-title {
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #154530;
+  margin: 2px 0 3px;
+}
+
+.vm-pillar-desc {
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: rgba(33, 28, 24, 0.68);
+  margin: 0;
+}
+
+/* Bottom ribbon banner on the Vision card */
+.vm-vision-footer-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 26px;
+  padding: 12px 18px;
+  background: linear-gradient(90deg, rgba(11, 59, 42, 0.04), rgba(255, 179, 33, 0.09), rgba(11, 59, 42, 0.04));
+  border: 1px solid rgba(184, 134, 40, 0.3);
+  border-radius: 999px;
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5a2a17;
+  text-align: center;
+}
+
+.vm-vision-footer-banner span:first-child,
+.vm-vision-footer-banner span:last-child {
+  color: var(--saffron);
+  flex-shrink: 0;
+}
+
+/* Commitments ribbon heading on the Mission card */
+.vm-commit-banner {
+  text-align: center;
+  margin: 2px 0 18px;
+}
+
+.vm-commit-banner-text {
+  display: inline-block;
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7b2915;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(255, 179, 33, 0.4);
 }
 
 .vm-commit-intro {
@@ -3449,21 +3645,83 @@ section {
   margin-right: 4px;
 }
 
-.vm-card-footer-note {
+.vm-ticket-medallion {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vm-ticket-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.vm-ticket-title {
+  font-size: 14.5px;
+}
+
+.vm-ticket-desc {
+  margin: 0;
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(33, 28, 24, 0.68);
+}
+
+.vm-card-footer-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
+  font-size: 16px;
   color: #5a2a17;
   line-height: 1.5;
-  margin: 0;
+  margin: 20px 0 0;
   padding: 16px 20px;
   background: #fdf2e1;
   border-left: 3px solid #ffb321;
   border-radius: 4px 16px 16px 4px;
 }
 
+.vm-footer-seal {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--saffron);
+  color: #5a2a17;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.vm-footer-quote {
+  margin: 0;
+  font-style: italic;
+}
+
 @media (max-width: 860px) {
   .vm-cards-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .vm-stamp-wrapper {
+    top: -16px;
+    right: 16px;
+    transform: rotate(6deg) scale(0.72);
+  }
+
+  .vm-card-eyebrow {
+    padding-right: 0;
+    margin-top: 46px;
   }
 }
 
@@ -3508,7 +3766,7 @@ section {
 
   font-size: clamp(36px, 5vw, 58px);
   font-weight: 700;
-  color: #1a3c2c;
+  color: #4a150e;
   line-height: 1.15;
   letter-spacing: -0.01em;
   margin: 0 0 16px;
@@ -3692,7 +3950,8 @@ section {
 
 .retro-hindi-badge {
   display: inline-block;
-  font-family: var(--display);
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
+  ;
   font-size: 13px;
   color: #7b2915;
   background: #faeedb;
@@ -3703,10 +3962,10 @@ section {
 }
 
 .retro-card-name {
-  font-family: var(--display);
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: bolder;
   font-size: clamp(22px, 2.3vw, 28px);
-  font-weight: 400;
-  color: #153826;
+  color: #4a150e;
   line-height: 1.2;
   margin: 0 0 6px;
 }
@@ -3810,7 +4069,7 @@ section {
   font-family: var(--serif);
   font-size: clamp(34px, 4.6vw, 54px);
   font-weight: 800;
-  color: #1a3c2c;
+  color: #4a150e;
   line-height: 1.18;
   letter-spacing: -0.01em;
   margin: 0;
@@ -3872,7 +4131,7 @@ section {
   font-family: var(--serif);
   font-size: 20px;
   font-weight: 700;
-  color: #1a3c2c;
+  color: #4a150e;
   margin: 0;
 }
 
@@ -3891,7 +4150,7 @@ section {
   position: relative;
   background-color: #062519;
   background-image: url("/build.png");
-  background-size: contain;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
