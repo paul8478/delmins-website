@@ -1283,9 +1283,9 @@ section {
 }
 
 .global-h2 {
-  font-family: 'Rozha One', \'Yatra One\', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: clamp(28px, 3.4vw, 44px);
-  font-weight: 400;
+  font-weight: 700;
   color: #fff4de;
   line-height: 1.2;
   margin: 0 0 14px;
@@ -1441,8 +1441,8 @@ section {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-family: 'Rozha One', Georgia, serif;
-  font-weight: 400;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 15px;
   color: #fff4de;
 }
@@ -1613,7 +1613,8 @@ section {
 /* Cardinal compass N/S/E/W */
 .globe-compass {
   position: absolute;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 13px;
   color: #ffb321;
   opacity: 0.7;
@@ -1675,9 +1676,9 @@ section {
 
 /* Retro wax-stamp labels */
 .globe-label {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: 11.5px;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.04em;
   white-space: nowrap;
   color: #0e1b14;
@@ -2049,7 +2050,7 @@ section {
 .faq-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: clamp(32px, 3.8vw, 46px);
-  font-weight: 400;
+  font-weight: 700;
   color: #4a150e;
   line-height: 1.18;
   letter-spacing: -0.01em;
@@ -2057,9 +2058,10 @@ section {
 }
 
 .faq-title-accent {
-  font-style: italic;
-  color: #b45309;
-  font-family: 'Rozha One', Georgia, serif;
+  /* font-style: italic; */
+  /* color: #b45309; */
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
 }
 
 /* Star Divider */
@@ -2084,7 +2086,7 @@ section {
 }
 
 .faq-subtitle {
-  font-family: var(--sans);
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
   font-size: 14.5px;
   line-height: 1.68;
   color: #5c4738;
@@ -2168,14 +2170,14 @@ section {
 .faq-concierge-heading {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 700;
   color: #24140b;
   line-height: 1.3;
   margin: 0 0 8px;
 }
 
 .faq-concierge-text {
-  font-family: var(--sans);
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
   font-size: 12.5px;
   line-height: 1.55;
   color: #655042;
@@ -2338,7 +2340,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: 15px;
   font-weight: 700;
   color: #8c2a12;
@@ -2378,7 +2380,7 @@ section {
 .faq-item-question {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: clamp(16px, 1.4vw, 18.5px);
-  font-weight: 400;
+  font-weight: 700;
   color: #24140b;
   line-height: 1.35;
   margin: 0;
@@ -2434,7 +2436,7 @@ section {
 }
 
 .faq-answer-text {
-  font-family: var(--sans);
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
   font-size: 13.8px;
   line-height: 1.68;
   color: #544133;
@@ -3031,6 +3033,7 @@ section {
 
 .bazaar-hindi-tag {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   ;
   font-size: 17px;
   color: #7b2915;
@@ -3042,7 +3045,7 @@ section {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
 
   font-size: clamp(38px, 5.2vw, 58px);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
   color: var(--ink);
   letter-spacing: -0.02em;
@@ -3093,6 +3096,7 @@ section {
 
 .bazaar-meta-tag {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 14px;
   color: #7b2915;
   margin-bottom: 12px;
@@ -3102,7 +3106,7 @@ section {
 .bazaar-content-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: clamp(28px, 3.4vw, 26px);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.18;
   color: #21120a;
   letter-spacing: -0.01em;
@@ -3167,6 +3171,7 @@ section {
 .timeline-journey-tag {
   display: block;
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
 
   font-size: 18px;
   color: #ffb834;
@@ -3314,7 +3319,7 @@ section {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
 
   font-size: clamp(38px, 5.2vw, 62px);
-  font-weight: 400;
+  font-weight: 700;
   color: #1a3c2c;
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -3357,7 +3362,7 @@ section {
 .vm-card-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: clamp(30px, 3.5vw, 42px);
-  font-weight: 400;
+  font-weight: 700;
   color: #154530;
   line-height: 1.15;
   margin: 0 0 22px;
@@ -3490,6 +3495,7 @@ section {
 
 .retro-tag {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
 
   font-size: 15px;
   letter-spacing: 0.14em;
@@ -3500,7 +3506,7 @@ section {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
 
   font-size: clamp(36px, 5vw, 58px);
-  font-weight: 400;
+  font-weight: 700;
   color: #1a3c2c;
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -4321,6 +4327,7 @@ section {
 
 .story-cta-box h2 {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
 
   font-size: clamp(32px, 4.5vw, 54px);
   color: #7b2915;
@@ -4747,7 +4754,7 @@ section {
 .cert-card-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   color: #1a1612;
   line-height: 1.25;
   margin: 0 0 4px;
@@ -4889,7 +4896,7 @@ section {
 .reviews-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: clamp(2.2rem, 3.4vw, 3.2rem);
-  font-weight: bolder;
+  font-weight: bolder !important;
   font-weight: 400;
   line-height: 1.16;
   color: #8e2a14;
@@ -4897,10 +4904,11 @@ section {
 }
 
 .reviews-title em {
-  font-style: italic;
+  font-style: normal;
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   ;
-  color: #4a3628;
+  /* color: #4a3628; */
 }
 
 .reviews-subtitle {
@@ -5065,7 +5073,8 @@ section {
   position: absolute;
   right: 18px;
   top: 16px;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 80px;
   line-height: 1;
   color: var(--card-acc, rgba(142, 42, 20, 0.07));
@@ -5154,9 +5163,9 @@ section {
 }
 
 .reviews-author-name {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: 16.5px;
-  font-weight: 400;
+  font-weight: 700;
   color: #1a1612;
   margin: 0 0 2px;
 }
@@ -5270,6 +5279,7 @@ section {
   align-items: baseline;
   gap: 12px;
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(2rem, 3.6vw, 3.3rem);
   line-height: 1;
   margin: 0 0 18px;
@@ -5483,7 +5493,8 @@ section {
 }
 
 .contact-hindi-tag {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 15px;
   color: #8c2a12;
   letter-spacing: 0.14em;
@@ -5492,7 +5503,8 @@ section {
 }
 
 .contact-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(34px, 4.8vw, 56px);
   color: var(--forest);
   line-height: 1.15;
@@ -5632,7 +5644,8 @@ section {
 }
 
 .contact-card-h3 {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 21px;
   color: var(--forest);
   margin: 2px 0 0;
@@ -5707,7 +5720,8 @@ section {
 
 .cb-text b {
   display: block;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 16px;
   color: #5a2a17;
 }
@@ -5751,7 +5765,8 @@ section {
   padding: 4px 14px;
   border: 1px dashed rgba(184, 134, 40, 0.5);
   border-radius: 999px;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.12em;
   color: #8c2a12;
@@ -5763,7 +5778,8 @@ section {
 }
 
 .ledger-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(22px, 2.8vw, 30px);
   color: var(--forest);
   margin: 0 0 6px;
@@ -5907,7 +5923,8 @@ section {
 }
 
 .ledger-success h3 {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 26px;
   color: var(--forest);
   margin: 0 0 10px;
@@ -5936,7 +5953,8 @@ section {
 
 .c-faq-tag {
   display: block;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.12em;
   color: #8c2a12;
@@ -5944,7 +5962,8 @@ section {
 }
 
 .c-faq-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(22px, 3vw, 28px);
   color: var(--forest);
   margin: 0 0 24px;
@@ -5958,7 +5977,8 @@ section {
 
 .c-faq-item b {
   display: block;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 16px;
   color: #0b3b2a;
   margin-bottom: 8px;
@@ -6008,7 +6028,8 @@ section {
 }
 
 .blog-hindi-tag {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 15px;
   color: #8c2a12;
   letter-spacing: 0.14em;
@@ -6017,7 +6038,8 @@ section {
 }
 
 .blog-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(34px, 4.8vw, 56px);
   color: var(--forest);
   line-height: 1.15;
@@ -6137,7 +6159,8 @@ section {
   left: 18px;
   background: #8c2a12;
   color: #fff;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.1em;
   padding: 6px 14px;
@@ -6169,7 +6192,8 @@ section {
 }
 
 .bf-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(24px, 3.2vw, 36px);
   color: var(--forest);
   line-height: 1.22;
@@ -6205,10 +6229,10 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: 15px;
   color: var(--forest);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Articles Grid */
@@ -6281,7 +6305,8 @@ section {
 }
 
 .bc-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 19.5px;
   color: var(--forest);
   line-height: 1.3;
@@ -6387,7 +6412,8 @@ section {
 }
 
 .am-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(26px, 3.6vw, 42px);
   color: var(--forest);
   line-height: 1.2;
@@ -6442,7 +6468,8 @@ section {
 }
 
 .am-dropcap::first-letter {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 54px;
   float: left;
   line-height: 0.85;
@@ -6460,7 +6487,8 @@ section {
 
 .am-cta-seal {
   display: inline-block;
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 11.5px;
   color: #8c2a12;
   letter-spacing: 0.12em;
@@ -6511,7 +6539,8 @@ section {
 }
 
 .bd-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(24px, 3.4vw, 36px);
   color: #fffdf8;
   margin: 0 0 10px;
@@ -6643,7 +6672,8 @@ section {
 }
 
 .legal-hindi-tag {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 15px;
   color: #8c2a12;
   letter-spacing: 0.14em;
@@ -6652,7 +6682,8 @@ section {
 }
 
 .legal-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(34px, 4.8vw, 56px);
   color: var(--forest);
   line-height: 1.15;
@@ -6754,7 +6785,8 @@ section {
 }
 
 .legal-h2 {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(20px, 2.4vw, 24px);
   color: var(--forest);
   margin: 32px 0 14px;
@@ -6874,7 +6906,8 @@ section {
 }
 
 .blog-clean-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(20px, 2.2vw, 23px);
   line-height: 1.32;
   color: var(--forest);
@@ -7005,7 +7038,8 @@ section {
 }
 
 .am-step-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 20px;
   color: var(--forest);
   margin: 0 0 12px;
@@ -7047,7 +7081,8 @@ section {
 }
 
 .am-conclusion-title {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 22px;
   color: var(--forest);
   margin: 0 0 12px;
@@ -7063,7 +7098,8 @@ section {
 
 .am-conclusion-motto {
   margin-top: 14px !important;
-  font-family: 'Rozha One', Georgia, serif !important;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif !important;
+  font-weight: 700 !important;
   font-size: 16px !important;
   color: #8c2a12 !important;
 }
@@ -7096,7 +7132,8 @@ section {
 }
 
 .am-section-h3 {
-  font-family: 'Rozha One', Georgia, serif;
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: 20px;
   color: var(--forest);
   margin: 0 0 12px;
@@ -7154,6 +7191,7 @@ section {
 .t-stat-num {
   display: block;
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-weight: 700;
   font-size: clamp(36px, 4.2vw, 48px);
   color: #ffb834;
   line-height: 1;
