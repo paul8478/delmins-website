@@ -22,7 +22,12 @@ export default function ContactPage({ onBackHome }) {
 
   return (
     <article className="contact-page">
-      {/* Hero Header */}
+      {/* The Custodians of Tradition */}
+      <LeadershipCards />
+
+      <Faq />
+
+      {/* Trade Desk & Headquarters */}
       <section className="contact-hero container">
         <div className="contact-hero-header">
           <motion.div className="contact-ornament" {...reveal}>
@@ -100,12 +105,6 @@ export default function ContactPage({ onBackHome }) {
           </motion.div>
         </div>
       </section>
-
-      {/* The Custodians of Tradition */}
-      <LeadershipCards />
-
-      <Faq />
-
 
       {/* Back to Home CTA */}
       <section className="container contact-bottom-nav">

@@ -60,87 +60,7 @@ export default function OurStoryPage({ onBackHome }) {
       </section>
 
       {/* ─── 2. The Delmins Journey Timeline: Experience That Builds Confidence ─── */}
-      <section className="timeline-journey-section">
-        <div className="container timeline-journey-inner">
-          <div className="timeline-journey-header">
-            <span className="timeline-journey-tag">OUR STRENGTH · THE DELMINS JOURNEY</span>
-            <h2 className="timeline-journey-title">Experience That Builds Confidence</h2>
-            <p className="timeline-header-sub">
-              Building a lasting business takes more than an idea. It takes experience, discipline, and the determination to turn a vision into reality.
-            </p>
-          </div>
-
-          <div className="timeline-track-wrap">
-            <div className="timeline-vertical-line" />
-
-            <div className="timeline-steps">
-              {/* Chapter 1 */}
-              <div className="timeline-step">
-                <div className="timeline-node" />
-                <div className="timeline-step-content">
-                  <span className="timeline-hindi-label">THE FOUNDING THOUGHT</span>
-                  <h3 className="timeline-step-title">The Founding Thought</h3>
-                  <p className="timeline-step-desc">
-                    At Delmins, ours began with a simple thought: food should be made with care, and people should feel confident about what they bring into their homes. Inspired by childhood memories of farms and gardens, Sangita Seth set out to build a food business guided by honesty, quality, and zero compromises on ingredients.
-                  </p>
-                </div>
-              </div>
-
-              {/* Chapter 2 */}
-              <div className="timeline-step">
-                <div className="timeline-node" />
-                <div className="timeline-step-content">
-                  <span className="timeline-hindi-label">45+ YEARS OF EXPERIENCE</span>
-                  <h3 className="timeline-step-title">45+ Years of Manufacturing Mastery</h3>
-                  <p className="timeline-step-desc">
-                    Atul Seth brings over 45 years of experience across diverse industries, including pharmaceuticals, plastics, and foam manufacturing. His journey has shaped a deep understanding of manufacturing operations, hygiene protocols, and the discipline required to build and sustain an enterprise that stands the test of time.
-                  </p>
-                </div>
-              </div>
-
-              {/* Chapter 3 */}
-              <div className="timeline-step">
-                <div className="timeline-node" />
-                <div className="timeline-step-content">
-                  <span className="timeline-hindi-label">TASTE &amp; CONVENIENCE</span>
-                  <h3 className="timeline-step-title">Good Food. Thoughtfully Made.</h3>
-                  <p className="timeline-step-desc">
-                    We believe food should be enjoyable, convenient, and made with care. Our pani puri kit brings the familiar taste of UP-style golgappa into the home — 100% natural, without preservatives or added chemicals — making it easier to enjoy a much-loved street-food favourite whenever the craving strikes.
-                  </p>
-                </div>
-              </div>
-
-              {/* Chapter 4 */}
-              <div className="timeline-step">
-                <div className="timeline-node" />
-                <div className="timeline-step-content">
-                  <span className="timeline-hindi-label">LOOKING TO THE FUTURE</span>
-                  <h3 className="timeline-step-title">Forward-Looking Global Growth</h3>
-                  <p className="timeline-step-desc">
-                    Sangita's founding vision gives Delmins its purpose, while Akshat Seth brings an entrepreneurial spirit and a forward-looking perspective to the family's ambition. Together, we combine experience, purpose, and fresh thinking to build a trusted consumer food company expanding to homes across India and international markets.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Key Milestone Metrics */}
-          <div className="timeline-stats-row">
-            <div className="t-stat-card">
-              <span className="t-stat-num">45+</span>
-              <span className="t-stat-label">Years of Industry Experience</span>
-            </div>
-            <div className="t-stat-card">
-              <span className="t-stat-num">100%</span>
-              <span className="t-stat-label">Natural Ingredients</span>
-            </div>
-            <div className="t-stat-card">
-              <span className="t-stat-num">0</span>
-              <span className="t-stat-label">Preservatives or Added Chemicals</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/*  */}
 
       {/* ─── 3. Directors Message Section: Built on Experience. Guided by Purpose. ─── */}
       <section className="directors-message-section container">
@@ -156,25 +76,48 @@ export default function OurStoryPage({ onBackHome }) {
         <div className="directors-card">
           <div className="directors-card-quote-mark" aria-hidden="true">“</div>
 
-          <div className="directors-card-body">
-            <p>
-              Delmins began with a belief that has remained at the heart of our journey: food should be made with care, and the people who enjoy it should feel confident in their choices.
-            </p>
-            <p>
-              As a family, we bring together different experiences, perspectives, and strengths, united by the ambition to build something meaningful and lasting.
-            </p>
-            <p>
-              Our professional journeys have taught us the importance of discipline, consistency, and the patience required to build a business that stands the test of time. We bring this understanding to Delmins, alongside a genuine commitment to developing food products that reflect our values and respond to the needs of modern consumers.
-            </p>
-            <p>
-              We recognise that trust cannot be built through promises alone. It must be earned through the quality of our products, the responsibility with which we operate, and our willingness to keep improving.
-            </p>
-            <p>
-              As we look ahead, our ambition is to build Delmins into an enduring enterprise — one that grows with purpose, creates lasting relationships, and remains true to the principles that inspired its beginning.
-            </p>
-            <p>
-              We are proud of the foundation we are building and approach the future with the determination to keep learning, innovating, and earning the confidence of the people we serve.
-            </p>
+          <div className="dm-timeline">
+            <div className="dm-timeline-line" aria-hidden="true" />
+
+            <div className="dm-timeline-item">
+              <span className="dm-timeline-node" aria-hidden="true" />
+              <div className="dm-timeline-content">
+                <span className="dm-timeline-label">Our Belief</span>
+                <p>
+                  Delmins began with a belief that has remained at the heart of our journey: food should be made with care, and the people who enjoy it should feel confident in their choices.
+                </p>
+              </div>
+            </div>
+
+            <div className="dm-timeline-item">
+              <span className="dm-timeline-node" aria-hidden="true" />
+              <div className="dm-timeline-content">
+                <span className="dm-timeline-label">Family, United</span>
+                <p>
+                  As a family, we bring together different experiences, perspectives, and strengths, united by the ambition to build something meaningful and lasting.
+                </p>
+              </div>
+            </div>
+
+            <div className="dm-timeline-item">
+              <span className="dm-timeline-node" aria-hidden="true" />
+              <div className="dm-timeline-content">
+                <span className="dm-timeline-label">Trust, Earned</span>
+                <p>
+                  Our professional journeys have taught us the importance of discipline, consistency, and patience. We recognise that trust cannot be built through promises alone — it must be earned through the quality of our products, the responsibility with which we operate, and our willingness to keep improving.
+                </p>
+              </div>
+            </div>
+
+            <div className="dm-timeline-item">
+              <span className="dm-timeline-node" aria-hidden="true" />
+              <div className="dm-timeline-content">
+                <span className="dm-timeline-label">Looking Ahead</span>
+                <p>
+                  Our ambition is to build Delmins into an enduring enterprise — one that grows with purpose, creates lasting relationships, and remains true to the principles that inspired its beginning. We approach the future with the determination to keep learning, innovating, and earning the confidence of the people we serve.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="directors-card-divider" />
@@ -383,7 +326,7 @@ export default function OurStoryPage({ onBackHome }) {
       </section>
 
       {/* ─── 6. Our Commitment Section: Building Something That Lasts ─── */}
-      <section className="commitment-section">
+      {/* <section className="commitment-section">
         <div className="commitment-ring commitment-ring-tl" aria-hidden="true" />
         <div className="commitment-ring commitment-ring-br" aria-hidden="true" />
 
@@ -412,7 +355,7 @@ export default function OurStoryPage({ onBackHome }) {
             Delmins — Delicacies Served in Minutes.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* ─── 7. Call To Action at Bottom of Page ─── */}
       <section className="container">

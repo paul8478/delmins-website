@@ -147,9 +147,15 @@ export default function BlogPage({ onBackHome }) {
 
   const categories = ['All', 'How-to Guide', 'Food Stories']
 
-  const filteredArticles = activeCategory === 'All'
+  const showFeatured = activeCategory === 'All' || activeCategory === 'How-to Guide'
+
+  const baseArticles = activeCategory === 'All'
     ? ARTICLES
     : ARTICLES.filter(a => a.category === activeCategory)
+
+  const filteredArticles = showFeatured
+    ? baseArticles.filter(a => a.id !== ARTICLES[0].id)
+    : baseArticles
 
   return (
     <article className="blog-page">
@@ -192,7 +198,7 @@ export default function BlogPage({ onBackHome }) {
       </section>
 
       {/* Featured Lead Editorial Banner */}
-      {(activeCategory === 'All' || activeCategory === 'How-to Guide') && (
+      {showFeatured && (
         <section className="container blog-featured-section">
           <div className="blog-featured-card" onClick={() => setReadingArticle(ARTICLES[0])}>
             <span className="bf-corner tl" aria-hidden="true" />
@@ -455,7 +461,7 @@ export default function BlogPage({ onBackHome }) {
           <span className="bd-corner br" aria-hidden="true" />
 
           <div className="bd-inner">
-            <span className="bd-star">★</span>
+            <span className="bd-star"></span>
             <h3 className="bd-title">Panipuri Dispatch</h3>
             <p className="bd-sub">
               Delivered once a month: traditional Indian recipes, folklore from historic sweetmeat makers, and export announcements.
