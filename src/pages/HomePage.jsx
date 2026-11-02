@@ -13,10 +13,10 @@ import ReviewsCarousel from '../components/ReviewsCarousel.jsx'
 import Faq from '../components/Faq.jsx'
 import OneMorePlate from '../components/OneMorePlate.jsx'
 
-export default function HomePage({ ready, onOpenStory }) {
+export default function HomePage({ onOpenStory }) {
   return (
     <>
-      <Hero2 ready={ready} />
+      <Hero2 />
       <Marquee />
       <HeritageStory onOpenStory={onOpenStory} />
       <Craft />
@@ -29,7 +29,7 @@ export default function HomePage({ ready, onOpenStory }) {
       <Certificates />
       {/* <ReviewsCarousel /> */}
       {/* <Faq /> */}
-      <OneMorePlate />
+      {/* <OneMorePlate /> */}
     </>
   )
 }

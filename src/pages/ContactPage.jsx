@@ -45,133 +45,44 @@ export default function ContactPage({ onBackHome }) {
           </motion.p>
         </div>
 
-        {/* 2-Column Grid: Left Info & Right Archival Form */}
-        <div className="contact-grid">
-          {/* Left Column: Official Desks & Direct Channels */}
+        {/* Single Combined Card: Trade Desk + Headquarters */}
+        <div className="contact-single-wrap">
           <motion.div
-            className="contact-info-col"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            className="contact-card contact-card-combined"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease }}
           >
-            {/* Card 1: Trade & International Export */}
-            <div className="contact-card">
-              <span className="contact-card-corner tl" aria-hidden="true" />
-              <span className="contact-card-corner tr" aria-hidden="true" />
-              <span className="contact-card-corner bl" aria-hidden="true" />
-              <span className="contact-card-corner br" aria-hidden="true" />
-
-              <div className="contact-card-head">
-                <span className="contact-card-icon">🌐</span>
-                <div>
-                  <span className="contact-card-eyebrow">INTERNATIONAL TRADE DESK</span>
-                  <h3 className="contact-card-h3">Global Export &amp; Consignments</h3>
-                </div>
-              </div>
-
-              <p className="contact-card-p">
-                Certified by APEDA and registered with FIEO for compliant food exports to North America,
-                the UK, UAE, and Europe. FCL and LCL shipments available with customized export labeling.
-              </p>
-
-              <div className="contact-detail-list">
-                <div className="contact-detail-row">
-                  <span className="contact-detail-label">Export Desk</span>
-                  <a href="mailto:export@delminsfoods.com" className="contact-link">export@delminsfoods.com</a>
-                </div>
-                <div className="contact-detail-row">
-                  <span className="contact-detail-label">Commercial Phone</span>
-                  <a href="tel:+919876543210" className="contact-link">+91 98765 43210 / WhatsApp</a>
-                </div>
-                {/* <div className="contact-detail-row contact-detail-row-stack">
-                  <span className="contact-detail-label">Accreditations</span>
-                  <div className="contact-tag-group">
-                    <span className="contact-tag-pill">APEDA</span>
-                    <span className="contact-tag-pill">FIEO</span>
-                    <span className="contact-tag-pill">FSSAI Central</span>
-                  </div>
-                </div> */}
-              </div>
-            </div>
-
-            {/* Card 2: Registered Headquarters */}
-            {/* <div className="contact-card">
-              <span className="contact-card-corner tl" aria-hidden="true" />
-              <span className="contact-card-corner tr" aria-hidden="true" />
-              <span className="contact-card-corner bl" aria-hidden="true" />
-              <span className="contact-card-corner br" aria-hidden="true" />
-
-              <div className="contact-card-head">
-                <span className="contact-card-icon">🏛️</span>
-                <div>
-                  <span className="contact-card-eyebrow">HEADQUARTERS &amp; FACILITY</span>
-                  <h3 className="contact-card-h3">Delmins Food Private Limited</h3>
-                </div>
-              </div>
-
-              <p className="contact-card-p">
-                State-of-the-art automated, touchless puri extrusion and moisture-sealed packaging plant
-                operating under stringent FSDA Uttar Pradesh safety protocols.
-              </p>
-
-              <div className="contact-detail-list">
-                <div className="contact-detail-row">
-                  <span className="contact-detail-label">General Desk</span>
-                  <a href="mailto:namaste@delminsfoods.com" className="contact-link">namaste@delminsfoods.com</a>
-                </div>
-                <div className="contact-detail-row">
-                  <span className="contact-detail-label">Location</span>
-                  <span className="contact-plain-val">Uttar Pradesh, India (Pin 208001)</span>
-                </div>
-                <div className="contact-detail-row">
-                  <span className="contact-detail-label">Central Lic</span>
-                  <span className="contact-plain-val">FSSAI 1002401100018</span>
-                </div>
-              </div>
-            </div> */}
-
-            {/* Card 3: Quick Personal Delivery Notice */}
-            {/* <div className="contact-blinkit-callout">
-              <div className="cb-icon">⚡</div>
-              <div className="cb-text">
-                <b>Craving pani puri right now?</b>
-                <p>Delmins ready-to-fill and fry-at-home packs are delivered in 10 minutes on Blinkit.</p>
-              </div>
-              <a
-                href="https://blinkit.com/s/?q=delmins"
-                target="_blank"
-                rel="noreferrer"
-                className="btn btn-saffron btn-sm"
-              >
-                Open Blinkit →
-              </a>
-            </div> */}
-          </motion.div>
-
-
-
-          {/* Right Column: Archival Inquiry Form */}
-          {/* Card 2: Registered Headquarters */}
-          <div className="contact-card">
             <span className="contact-card-corner tl" aria-hidden="true" />
             <span className="contact-card-corner tr" aria-hidden="true" />
             <span className="contact-card-corner bl" aria-hidden="true" />
             <span className="contact-card-corner br" aria-hidden="true" />
 
+            {/* Combined: Trade Desk + Headquarters, under one title */}
             <div className="contact-card-head">
               <span className="contact-card-icon">🏛️</span>
               <div>
-                <span className="contact-card-eyebrow">HEADQUARTERS &amp; FACILITY</span>
+                <span className="contact-card-eyebrow">TRADE DESK &amp; HEADQUARTERS</span>
                 <h3 className="contact-card-h3">Delmins Food Private Limited</h3>
               </div>
             </div>
 
             <p className="contact-card-p">
-              State-of-the-art automated, touchless puri extrusion and moisture-sealed packaging plant
+              Certified by APEDA and registered with FIEO for compliant food exports to North America, the UK,
+              UAE, and Europe, with FCL and LCL shipments available with customized export labeling — all from
+              our state-of-the-art automated, touchless puri extrusion and moisture-sealed packaging plant,
               operating under stringent FSDA Uttar Pradesh safety protocols.
             </p>
 
             <div className="contact-detail-list">
+              <div className="contact-detail-row">
+                <span className="contact-detail-label">Export Desk</span>
+                <a href="mailto:export@delminsfoods.com" className="contact-link">export@delminsfoods.com</a>
+              </div>
+              <div className="contact-detail-row">
+                <span className="contact-detail-label">Commercial Phone</span>
+                <a href="tel:+919876543210" className="contact-link">+91 98765 43210 / WhatsApp</a>
+              </div>
               <div className="contact-detail-row">
                 <span className="contact-detail-label">General Desk</span>
                 <a href="mailto:namaste@delminsfoods.com" className="contact-link">namaste@delminsfoods.com</a>
@@ -185,8 +96,7 @@ export default function ContactPage({ onBackHome }) {
                 <span className="contact-plain-val">FSSAI 1002401100018</span>
               </div>
             </div>
-          </div>
-
+          </motion.div>
         </div>
       </section>
 

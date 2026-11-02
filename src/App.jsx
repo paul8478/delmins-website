@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion'
-import Loader from './components/Loader.jsx'
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
 import HomePage from './pages/HomePage.jsx'
@@ -11,8 +9,6 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage.jsx'
 import TermsPage from './pages/TermsPage.jsx'
 
 export default function App() {
-  const [ready, setReady] = useState(false)
-
   const getViewFromHash = () => {
     const hash = window.location.hash
     if (hash === '#our-journey') return 'story'
@@ -24,8 +20,6 @@ export default function App() {
   }
 
   const [currentView, setCurrentView] = useState(getViewFromHash)
-  const { scrollYProgress } = useScroll()
-  const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30 })
 
   useEffect(() => {
     const handleHash = () => {
@@ -35,10 +29,6 @@ export default function App() {
     window.addEventListener('hashchange', handleHash)
     return () => window.removeEventListener('hashchange', handleHash)
   }, [])
-
-  useEffect(() => {
-    document.body.style.overflow = ready ? '' : 'hidden'
-  }, [ready])
 
   const navigate = (view) => {
     setCurrentView(view)
@@ -56,8 +46,6 @@ export default function App() {
 
   return (
     <>
-      <AnimatePresence>{!ready && <Loader key="loader" onDone={() => setReady(true)} />}</AnimatePresence>
-      <motion.div className="scroll-bar" style={{ scaleX: progress }} />
       <div className="grain" aria-hidden />
       <Nav currentView={currentView} navigate={navigate} />
       <main>
@@ -67,7 +55,7 @@ export default function App() {
         {currentView === 'privacy' && <PrivacyPolicyPage onBackHome={() => navigate('home')} />}
         {currentView === 'terms' && <TermsPage onBackHome={() => navigate('home')} />}
         {currentView === 'home' && (
-          <HomePage ready={ready} onOpenStory={() => navigate('story')} />
+          <HomePage onOpenStory={() => navigate('story')} />
         )}
       </main>
       <Footer navigate={navigate} />

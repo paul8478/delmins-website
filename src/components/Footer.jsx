@@ -57,11 +57,11 @@ export default function Footer({ navigate }) {
 
             {/* Middle: Quick Links, stacked vertically */}
             <div className="footer-retro-nav-col">
-              <div className="footer-retro-nav-heading">
+              {/* <div className="footer-retro-nav-heading">
                 <span className="footer-retro-nav-flourish">✦</span>
                 Quick Links
                 <span className="footer-retro-nav-flourish">✦</span>
-              </div>
+              </div> */}
               <nav className="footer-retro-nav">
                 <a href="#top" onClick={(e) => handleNav(e, 'home')}>
                   Home
@@ -80,11 +80,11 @@ export default function Footer({ navigate }) {
 
             {/* Get in Touch */}
             <div className="footer-retro-contact-col">
-              <div className="footer-retro-nav-heading">
+              {/* <div className="footer-retro-nav-heading">
                 <span className="footer-retro-nav-flourish">✦</span>
                 Get in Touch
                 <span className="footer-retro-nav-flourish">✦</span>
-              </div>
+              </div> */}
               <div className="footer-retro-contact">
                 <a href="mailto:namaste@delminsfoods.com">namaste@delminsfoods.com</a>
                 <a href="tel:+919876543210">+91 98765 43210</a>
