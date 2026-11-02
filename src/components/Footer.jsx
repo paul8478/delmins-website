@@ -47,8 +47,8 @@ export default function Footer({ navigate }) {
           <a href="#blog" onClick={(e) => handleNav(e, 'blog')}>
             Chronicles / Blog
           </a>
-          <a href="#contact" onClick={(e) => handleNav(e, 'contact')}>
-            Contact Us
+          <a href="#about" onClick={(e) => handleNav(e, 'about')}>
+            About Us
           </a>
         </nav>
 

@@ -26,7 +26,7 @@ export default function ContactPage({ onBackHome }) {
         <div className="contact-hero-header">
           <motion.div className="contact-ornament" {...reveal}>
             <span className="contact-ornament-line" />
-            <span className="contact-hindi-tag">Contuct Us</span>
+            <span className="contact-hindi-tag">About Us</span>
             <span className="contact-ornament-line" />
           </motion.div>
           <motion.h1 className="contact-title" {...reveal}>

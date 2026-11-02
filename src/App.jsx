@@ -16,7 +16,7 @@ export default function App() {
   const getViewFromHash = () => {
     const hash = window.location.hash
     if (hash === '#our-story') return 'story'
-    if (hash === '#contact') return 'contact'
+    if (hash === '#about') return 'about'
     if (hash === '#blog') return 'blog'
     if (hash === '#privacy-policy' || hash === '#privacy') return 'privacy'
     if (hash === '#terms-and-conditions' || hash === '#terms') return 'terms'
@@ -62,7 +62,7 @@ export default function App() {
       <Nav currentView={currentView} navigate={navigate} />
       <main>
         {currentView === 'story' && <OurStoryPage onBackHome={() => navigate('home')} />}
-        {currentView === 'contact' && <ContactPage onBackHome={() => navigate('home')} />}
+        {currentView === 'about' && <ContactPage onBackHome={() => navigate('home')} />}
         {currentView === 'blog' && <BlogPage onBackHome={() => navigate('home')} />}
         {currentView === 'privacy' && <PrivacyPolicyPage onBackHome={() => navigate('home')} />}
         {currentView === 'terms' && <TermsPage onBackHome={() => navigate('home')} />}

@@ -5,7 +5,7 @@ const links = [
   ['Home', '#top', 'home'],
   ['Our Story', '#our-story', 'story'],
   ['Blog', '#blog', 'blog'],
-  ['Contact Us', '#contact', 'contact'],
+  ['About Us', '#about', 'about'],
 ]
 
 export default function Nav({ currentView, navigate }) {

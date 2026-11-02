@@ -456,7 +456,7 @@ export default function BlogPage({ onBackHome }) {
 
           <div className="bd-inner">
             <span className="bd-star">★</span>
-            <h3 className="bd-title">The Delmins Chaat Dispatch</h3>
+            <h3 className="bd-title">Panipuri Dispatch</h3>
             <p className="bd-sub">
               Delivered once a month: traditional Indian recipes, folklore from historic sweetmeat makers, and export announcements.
             </p>

@@ -6,8 +6,8 @@ const places = [
   { tag: 'Quick commerce', name: 'Blinkit', where: 'Live in Gurgaon · expanding city by city', cta: 'Order in minutes', href: 'https://blinkit.com/s/?q=delmins', tone: 'saffron', big: true },
   { tag: 'Retail', name: 'Lulu Mall', where: 'Lucknow', tone: 'cream' },
   { tag: 'Retail', name: 'Phoenix Mall', where: 'On the shelf now', tone: 'mint' },
-  { tag: 'Coming soon', name: 'Delmins Kiosks', where: 'Fresh pani puri counters in malls & high streets', cta: 'Partner with us', href: '#contact', tone: 'chili', big: true },
-  { tag: 'Export', name: 'Worldwide', where: 'Dubai · Canada · Scotland — importers & distributors welcome', cta: 'Import Delmins', href: '#contact', tone: 'forest', big: true },
+  { tag: 'Coming soon', name: 'Delmins Kiosks', where: 'Fresh pani puri counters in malls & high streets', cta: 'Partner with us', href: '#about', tone: 'chili', big: true },
+  { tag: 'Export', name: 'Worldwide', where: 'Dubai · Canada · Scotland — importers & distributors welcome', cta: 'Import Delmins', href: '#about', tone: 'forest', big: true },
 ]
 
 export default function Shelves() {

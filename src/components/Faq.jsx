@@ -59,7 +59,7 @@ export default function Faq() {
             <div className="faq-sticky-header">
               <motion.div className="faq-eyebrow-pill" {...reveal}>
                 <span className="faq-pill-star">★</span>
-                <span>प्रश्न एवं उत्तर · QUESTIONS & ANSWERS</span>
+                <span>QUESTIONS & ANSWERS</span>
                 <span className="faq-pill-star">★</span>
               </motion.div>
 
