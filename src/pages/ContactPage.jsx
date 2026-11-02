@@ -83,19 +83,19 @@ export default function ContactPage({ onBackHome }) {
                   <span className="contact-detail-label">Commercial Phone</span>
                   <a href="tel:+919876543210" className="contact-link">+91 98765 43210 / WhatsApp</a>
                 </div>
-                <div className="contact-detail-row contact-detail-row-stack">
+                {/* <div className="contact-detail-row contact-detail-row-stack">
                   <span className="contact-detail-label">Accreditations</span>
                   <div className="contact-tag-group">
                     <span className="contact-tag-pill">APEDA</span>
                     <span className="contact-tag-pill">FIEO</span>
                     <span className="contact-tag-pill">FSSAI Central</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
             {/* Card 2: Registered Headquarters */}
-            <div className="contact-card">
+            {/* <div className="contact-card">
               <span className="contact-card-corner tl" aria-hidden="true" />
               <span className="contact-card-corner tr" aria-hidden="true" />
               <span className="contact-card-corner bl" aria-hidden="true" />
@@ -128,10 +128,10 @@ export default function ContactPage({ onBackHome }) {
                   <span className="contact-plain-val">FSSAI 1002401100018</span>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Card 3: Quick Personal Delivery Notice */}
-            <div className="contact-blinkit-callout">
+            {/* <div className="contact-blinkit-callout">
               <div className="cb-icon">⚡</div>
               <div className="cb-text">
                 <b>Craving pani puri right now?</b>
@@ -145,184 +145,48 @@ export default function ContactPage({ onBackHome }) {
               >
                 Open Blinkit →
               </a>
-            </div>
+            </div> */}
           </motion.div>
+
+
 
           {/* Right Column: Archival Inquiry Form */}
-          <motion.div
-            className="contact-form-col"
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7, ease }}
-          >
-            <div className="contact-form-ledger">
-              {/* Corner Ornaments */}
-              <span className="ledger-corner tl" aria-hidden="true" />
-              <span className="ledger-corner tr" aria-hidden="true" />
-              <span className="ledger-corner bl" aria-hidden="true" />
-              <span className="ledger-corner br" aria-hidden="true" />
+          {/* Card 2: Registered Headquarters */}
+          <div className="contact-card">
+            <span className="contact-card-corner tl" aria-hidden="true" />
+            <span className="contact-card-corner tr" aria-hidden="true" />
+            <span className="contact-card-corner bl" aria-hidden="true" />
+            <span className="contact-card-corner br" aria-hidden="true" />
 
-              <div className="ledger-header">
-                <div className="ledger-stamp-box">
-                  <span className="ledger-stamp-star">★</span>
-                  <span>DELMINS OFFICIAL DISPATCH</span>
-                  <span className="ledger-stamp-star">★</span>
-                </div>
-                <h2 className="ledger-title">Trade &amp; General Inquiry Form</h2>
-                <p className="ledger-subtitle">Fill in your requirements. Our trade desk will respond within 24 hours.</p>
+            <div className="contact-card-head">
+              <span className="contact-card-icon">🏛️</span>
+              <div>
+                <span className="contact-card-eyebrow">HEADQUARTERS &amp; FACILITY</span>
+                <h3 className="contact-card-h3">Delmins Food Private Limited</h3>
               </div>
-
-              {submitted ? (
-                <div className="ledger-success">
-                  <div className="ledger-success-seal">
-                    <span>✦</span>
-                    <b>INQUIRY RECORDED</b>
-                    <span>✦</span>
-                  </div>
-                  <h3> Thank you, {formData.name}.</h3>
-                  <p>
-                    Your dispatch note has been successfully entered into our trade register.
-                    Our representative will get in touch with you at <strong>{formData.email}</strong> shortly.
-                  </p>
-                  <button
-                    className="btn btn-dark"
-                    onClick={() => {
-                      setSubmitted(false)
-                      setFormData({
-                        name: '',
-                        email: '',
-                        phone: '',
-                        inquiryType: 'export',
-                        cityCountry: '',
-                        message: '',
-                      })
-                    }}
-                  >
-                    Submit Another Inquiry
-                  </button>
-                </div>
-              ) : (
-                <form className="ledger-form" onSubmit={handleSubmit}>
-                  {/* Inquiry Type Radio / Pill Selector */}
-                  <div className="form-group">
-                    <label className="form-label">Nature of Inquiry</label>
-                    <div className="inquiry-type-grid">
-                      {[
-                        { id: 'export', label: 'Export / Worldwide Consignment' },
-                        { id: 'distro', label: 'Domestic Stockist & Retail' },
-                        { id: 'bulk', label: 'Catering & Bulk Celebrations' },
-                        { id: 'general', label: 'General & Customer Feedback' },
-                      ].map((t) => (
-                        <label
-                          key={t.id}
-                          className={`inquiry-pill ${formData.inquiryType === t.id ? 'active' : ''}`}
-                        >
-                          <input
-                            type="radio"
-                            name="inquiryType"
-                            value={t.id}
-                            checked={formData.inquiryType === t.id}
-                            onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
-                          />
-                          <span>{t.label}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Name and Email */}
-                  <div className="form-row-2">
-                    <div className="form-group">
-                      <label className="form-label" htmlFor="name">
-                        Your Full Name <span className="req">*</span>
-                      </label>
-                      <input
-                        id="name"
-                        type="text"
-                        required
-                        placeholder="e.g. Vikram Sharma"
-                        className="form-input"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label className="form-label" htmlFor="email">
-                        Email Address <span className="req">*</span>
-                      </label>
-                      <input
-                        id="email"
-                        type="email"
-                        required
-                        placeholder="e.g. vikram@importgulf.com"
-                        className="form-input"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      />
-                    </div>
-                  </div>
-
-                  {/* Phone & City/Country */}
-                  <div className="form-row-2">
-                    <div className="form-group">
-                      <label className="form-label" htmlFor="phone">
-                        Phone / WhatsApp
-                      </label>
-                      <input
-                        id="phone"
-                        type="tel"
-                        placeholder="e.g. +91 98234 56789"
-                        className="form-input"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      />
-                    </div>
-
-                    <div className="form-group">
-                      <label className="form-label" htmlFor="cityCountry">
-                        City &amp; Country
-                      </label>
-                      <input
-                        id="cityCountry"
-                        type="text"
-                        placeholder="e.g. Dubai, UAE / Toronto, CA"
-                        className="form-input"
-                        value={formData.cityCountry}
-                        onChange={(e) => setFormData({ ...formData, cityCountry: e.target.value })}
-                      />
-                    </div>
-                  </div>
-
-                  {/* Message */}
-                  <div className="form-group">
-                    <label className="form-label" htmlFor="message">
-                      Details / Order Specifications
-                    </label>
-                    <textarea
-                      id="message"
-                      rows={4}
-                      placeholder="Tell us about your distribution footprint, required container volume, or the event date..."
-                      className="form-textarea"
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    />
-                  </div>
-
-                  {/* Form Footer */}
-                  <div className="ledger-footer">
-                    <p className="ledger-disclaimer">
-                      🔒 Your commercial details are held strictly confidential. No marketing spam.
-                    </p>
-                    <button type="submit" className="btn btn-saffron ledger-submit">
-                      <span>Send Official Dispatch</span>
-                      <span className="arrow">✦</span>
-                    </button>
-                  </div>
-                </form>
-              )}
             </div>
-          </motion.div>
+
+            <p className="contact-card-p">
+              State-of-the-art automated, touchless puri extrusion and moisture-sealed packaging plant
+              operating under stringent FSDA Uttar Pradesh safety protocols.
+            </p>
+
+            <div className="contact-detail-list">
+              <div className="contact-detail-row">
+                <span className="contact-detail-label">General Desk</span>
+                <a href="mailto:namaste@delminsfoods.com" className="contact-link">namaste@delminsfoods.com</a>
+              </div>
+              <div className="contact-detail-row">
+                <span className="contact-detail-label">Location</span>
+                <span className="contact-plain-val">Uttar Pradesh, India (Pin 208001)</span>
+              </div>
+              <div className="contact-detail-row">
+                <span className="contact-detail-label">Central Lic</span>
+                <span className="contact-plain-val">FSSAI 1002401100018</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
