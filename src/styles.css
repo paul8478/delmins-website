@@ -1992,8 +1992,8 @@ section {
   position: relative;
   background: var(--cream);
   padding: clamp(80px, 10vw, 130px) 0;
-  border-top: 1px solid rgba(184, 134, 40, 0.22);
-  border-bottom: 1px solid rgba(184, 134, 40, 0.22);
+  /* border-top: 1px solid rgba(184, 134, 40, 0.22);
+  border-bottom: 1px solid rgba(184, 134, 40, 0.22); */
   overflow: hidden;
 }
 
@@ -5561,9 +5561,9 @@ section {
 .contact-card {
   position: relative;
   background: #fffdf8;
-  border: 1px solid rgba(184, 134, 40, 0.28);
-  border-radius: 16px;
-  padding: clamp(24px, 3.5vw, 32px);
+  border: 1px solid rgba(184, 134, 40, 0.24);
+  border-radius: 18px;
+  padding: clamp(26px, 3.5vw, 34px);
   box-shadow: 0 8px 24px rgba(14, 27, 20, 0.04);
 }
 
@@ -5626,12 +5626,21 @@ section {
 .contact-card-head {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 14px;
+  gap: 16px;
+  margin-bottom: 18px;
 }
 
 .contact-card-icon {
-  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(11, 59, 42, 0.06);
+  border: 1px solid rgba(184, 134, 40, 0.3);
+  font-size: 20px;
   line-height: 1;
 }
 
@@ -5639,7 +5648,7 @@ section {
   display: block;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   color: #8c2a12;
   text-transform: uppercase;
 }
@@ -5647,61 +5656,85 @@ section {
 .contact-card-h3 {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 20px;
   color: var(--forest);
-  margin: 2px 0 0;
+  margin: 4px 0 0;
 }
 
 .contact-card-p {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
-  color: rgba(14, 27, 20, 0.76);
-  margin: 0 0 18px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: rgba(14, 27, 20, 0.7);
+  margin: 0 0 20px;
+}
+
+.contact-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(184, 134, 40, 0.16);
 }
 
 .contact-detail-row {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
-  gap: 8px;
+  column-gap: 10px;
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
   font-size: 14px;
-  padding: 6px 0;
-  border-top: 1px dashed rgba(184, 134, 40, 0.18);
+  padding: 7px 0;
+}
+
+.contact-detail-row-stack {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .contact-detail-label {
-  font-weight: 600;
-  color: var(--forest);
-  min-width: 120px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(11, 59, 42, 0.55);
+  min-width: 110px;
 }
 
 .contact-link {
   color: #0b3b2a;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color 0.2s;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(11, 59, 42, 0.25);
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .contact-link:hover {
   color: var(--saffron);
+  border-color: var(--saffron);
 }
 
 .contact-plain-val {
   color: rgba(14, 27, 20, 0.8);
+  font-weight: 500;
+}
+
+.contact-tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .contact-tag-pill {
   display: inline-block;
-  padding: 2px 8px;
-  background: rgba(60, 191, 104, 0.12);
-  border: 1px solid rgba(60, 191, 104, 0.35);
+  padding: 3px 10px;
+  background: rgba(60, 191, 104, 0.1);
+  border: 1px solid rgba(60, 191, 104, 0.3);
   border-radius: 999px;
   font-size: 11px;
   font-weight: 700;
   color: #0b3b2a;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 /* Blinkit callout */
@@ -5710,13 +5743,30 @@ section {
   align-items: center;
   gap: 16px;
   background: #fdf5e2;
-  border: 1.5px solid rgba(255, 179, 33, 0.45);
-  border-radius: 16px;
+  border: 1.5px solid rgba(255, 179, 33, 0.4);
+  border-radius: 18px;
   padding: 18px 24px;
 }
 
 .cb-icon {
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 179, 33, 0.14);
+  font-size: 20px;
+}
+
+.cb-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.contact-blinkit-callout .btn-sm {
+  flex-shrink: 0;
 }
 
 .cb-text b {
@@ -5763,15 +5813,12 @@ section {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 14px;
-  border: 1px dashed rgba(184, 134, 40, 0.5);
-  border-radius: 999px;
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-weight: 700;
   font-size: 11px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   color: #8c2a12;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .ledger-stamp-star {
@@ -6579,6 +6626,15 @@ section {
 .bd-input:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(255, 179, 33, 0.4);
+}
+
+/* Contact grid stacks earlier than the shared breakpoint below - at
+   960-1200px it was still two columns while also holding two-column
+   form rows inside, which squeezed text and wrapped placeholders. */
+@media (max-width: 1200px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Responsive adjustments */

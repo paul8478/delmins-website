@@ -22,13 +22,13 @@ export default function HomePage({ ready, onOpenStory }) {
       <Craft />
       <HeritageStory2 onOpenStory={onOpenStory} />
 
-      <Global />
+      {/* <Global /> */}
       <HandCheers />
       <Marquee2 />
 
       <Certificates />
-      <ReviewsCarousel />
-      <Faq />
+      {/* <ReviewsCarousel /> */}
+      {/* <Faq /> */}
       <OneMorePlate />
     </>
   )

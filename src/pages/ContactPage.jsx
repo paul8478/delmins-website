@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ease, reveal } from '../components/ease.js'
-
+import Faq from '../components/Faq.jsx'
 export default function ContactPage({ onBackHome }) {
   const [formData, setFormData] = useState({
     name: '',
@@ -74,19 +74,23 @@ export default function ContactPage({ onBackHome }) {
                 the UK, UAE, and Europe. FCL and LCL shipments available with customized export labeling.
               </p>
 
-              <div className="contact-detail-row">
-                <span className="contact-detail-label">Export Desk:</span>
-                <a href="mailto:export@delminsfoods.com" className="contact-link">export@delminsfoods.com</a>
-              </div>
-              <div className="contact-detail-row">
-                <span className="contact-detail-label">Commercial Phone:</span>
-                <a href="tel:+919876543210" className="contact-link">+91 98765 43210 / WhatsApp</a>
-              </div>
-              <div className="contact-detail-row">
-                <span className="contact-detail-label">Accreditations:</span>
-                <span className="contact-tag-pill">APEDA</span>
-                <span className="contact-tag-pill">FIEO</span>
-                <span className="contact-tag-pill">FSSAI Central</span>
+              <div className="contact-detail-list">
+                <div className="contact-detail-row">
+                  <span className="contact-detail-label">Export Desk</span>
+                  <a href="mailto:export@delminsfoods.com" className="contact-link">export@delminsfoods.com</a>
+                </div>
+                <div className="contact-detail-row">
+                  <span className="contact-detail-label">Commercial Phone</span>
+                  <a href="tel:+919876543210" className="contact-link">+91 98765 43210 / WhatsApp</a>
+                </div>
+                <div className="contact-detail-row contact-detail-row-stack">
+                  <span className="contact-detail-label">Accreditations</span>
+                  <div className="contact-tag-group">
+                    <span className="contact-tag-pill">APEDA</span>
+                    <span className="contact-tag-pill">FIEO</span>
+                    <span className="contact-tag-pill">FSSAI Central</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -110,17 +114,19 @@ export default function ContactPage({ onBackHome }) {
                 operating under stringent FSDA Uttar Pradesh safety protocols.
               </p>
 
-              <div className="contact-detail-row">
-                <span className="contact-detail-label">General Desk:</span>
-                <a href="mailto:namaste@delminsfoods.com" className="contact-link">namaste@delminsfoods.com</a>
-              </div>
-              <div className="contact-detail-row">
-                <span className="contact-detail-label">Location:</span>
-                <span className="contact-plain-val">Uttar Pradesh, India (Pin 208001)</span>
-              </div>
-              <div className="contact-detail-row">
-                <span className="contact-detail-label">Central Lic:</span>
-                <span className="contact-plain-val">FSSAI 1002401100018</span>
+              <div className="contact-detail-list">
+                <div className="contact-detail-row">
+                  <span className="contact-detail-label">General Desk</span>
+                  <a href="mailto:namaste@delminsfoods.com" className="contact-link">namaste@delminsfoods.com</a>
+                </div>
+                <div className="contact-detail-row">
+                  <span className="contact-detail-label">Location</span>
+                  <span className="contact-plain-val">Uttar Pradesh, India (Pin 208001)</span>
+                </div>
+                <div className="contact-detail-row">
+                  <span className="contact-detail-label">Central Lic</span>
+                  <span className="contact-plain-val">FSSAI 1002401100018</span>
+                </div>
               </div>
             </div>
 
@@ -320,27 +326,11 @@ export default function ContactPage({ onBackHome }) {
         </div>
       </section>
 
-      {/* Trade FAQ Strip */}
-      <section className="contact-faq-strip container">
-        <div className="c-faq-box">
-          <span className="c-faq-tag">QUICK TRADE FAQ</span>
-          <h3 className="c-faq-title">Frequently Asked Commercial Questions</h3>
-          <div className="c-faq-grid">
-            <div className="c-faq-item">
-              <b>What is the typical shelf life of export shipments?</b>
-              <p>Delmins puris feature a moisture-barrier nitrogen-sealed foil pouch providing an unbroken 9-month shelf life without chemical preservatives.</p>
-            </div>
-            <div className="c-faq-item">
-              <b>Do you support private labeling or custom language packaging?</b>
-              <p>Yes. For multi-container consignments, we provide bilingual nutrition panels complying with US FDA, CFIA (Canada), and Gulf GSO standards.</p>
-            </div>
-            <div className="c-faq-item">
-              <b>How are samples dispatched to prospective international buyers?</b>
-              <p>Sample testing cartons can be couriered via DHL/FedEx with full phytosanitary and batch test certificates upon request.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
+
+      <Faq />
+
 
       {/* Back to Home CTA */}
       <section className="container contact-bottom-nav">
