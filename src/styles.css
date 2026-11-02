@@ -2754,10 +2754,25 @@ section {
   opacity: 0.85;
 }
 
-.footer-retro-corner.tl { top: -5px; left: -5px; }
-.footer-retro-corner.tr { top: -5px; right: -5px; }
-.footer-retro-corner.bl { bottom: -5px; left: -5px; }
-.footer-retro-corner.br { bottom: -5px; right: -5px; }
+.footer-retro-corner.tl {
+  top: -5px;
+  left: -5px;
+}
+
+.footer-retro-corner.tr {
+  top: -5px;
+  right: -5px;
+}
+
+.footer-retro-corner.bl {
+  bottom: -5px;
+  left: -5px;
+}
+
+.footer-retro-corner.br {
+  bottom: -5px;
+  right: -5px;
+}
 
 .footer-retro-mark {
   position: absolute;
@@ -2768,8 +2783,13 @@ section {
   opacity: 0.8;
 }
 
-.footer-retro-mark.top { top: -8px; }
-.footer-retro-mark.bottom { bottom: -8px; }
+.footer-retro-mark.top {
+  top: -8px;
+}
+
+.footer-retro-mark.bottom {
+  bottom: -8px;
+}
 
 /* Four-column row: brand · quick links · get in touch · Hindi slogan */
 .footer-retro-top {
@@ -2923,7 +2943,7 @@ section {
 
 .footer-retro-slogan-text {
   font-family: 'Kalam', cursive;
-  font-size: clamp(19px, 2.1vw, 25px);
+  font-size: clamp(19px, 2.1vw, 65px);
   font-weight: 700;
   color: var(--saffron);
   line-height: 1.25;
@@ -4708,7 +4728,7 @@ section {
 
 /* Title & Ornamental Divider */
 .craft-card-title {
-  font-family: var(--display, 'Yatra One', cursive, serif);
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-size: clamp(18px, 1.3vw, 21px);
   font-weight: 400;
   color: #fff8e6;
