@@ -2715,9 +2715,12 @@ section {
 
 /* ---------- footer retro ---------- */
 .footer-retro {
-  background: #062519;
+  background: #062519 url("/FOOTER.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--cream);
-  padding: 85px 0 40px;
+  padding: 140px 0 40px;
   text-align: center;
 }
 
@@ -3809,7 +3812,10 @@ section {
 .directors-card {
   max-width: 780px;
   margin: 0 auto;
-  background: #ffffff;
+  background: #ffffff url("/card.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 28px;
   padding: clamp(36px, 5vw, 60px) clamp(32px, 5.5vw, 64px);
   box-shadow: 0 18px 48px -16px rgba(14, 27, 20, 0.08);
@@ -3877,9 +3883,12 @@ section {
 .commitment-section {
   position: relative;
   background-color: #062519;
-  background-image: radial-gradient(circle at 50% 50%, #062519 0%, #062519 100%);
+  background-image: url("/build.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
-  padding: clamp(90px, 11vw, 140px) 0;
+  padding: 0;
   overflow: hidden;
   margin: 40px 0 60px;
 }
@@ -3912,6 +3921,7 @@ section {
   z-index: 2;
   max-width: 840px;
   margin: 0 auto;
+  padding: clamp(50px, 7vw, 90px) 0;
   text-align: center;
 }
 
