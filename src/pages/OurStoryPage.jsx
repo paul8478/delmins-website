@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { ease, reveal } from '../components/ease.js'
-import LeadershipCards from '../components/LeadershipCards.jsx'
 import {
   RetroCornerBracket,
   VisionStampSvg,
@@ -186,9 +185,6 @@ export default function OurStoryPage({ onBackHome }) {
           </div>
         </div>
       </section>
-
-      {/* ─── 4. Retro Leadership Cards Section: Meet Our Directors ─── */}
-      <LeadershipCards />
 
       {/* ─── 5. What Drives Us: Vision & Mission Section ─── */}
       <section className="vision-mission-section container">

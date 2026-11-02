@@ -3,8 +3,8 @@ import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'framer-
 
 const links = [
   ['Home', '#top', 'home'],
-  ['Our Journey', '#our-journey', 'story'],
   ['Blog', '#blog', 'blog'],
+  ['Our Journey', '#our-journey', 'story'],
   ['About Us', '#about', 'about'],
 ]
 

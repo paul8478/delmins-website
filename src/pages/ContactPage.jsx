@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { ease, reveal } from '../components/ease.js'
 import Faq from '../components/Faq.jsx'
+import LeadershipCards from '../components/LeadershipCards.jsx'
 export default function ContactPage({ onBackHome }) {
   const [formData, setFormData] = useState({
     name: '',
@@ -100,8 +101,8 @@ export default function ContactPage({ onBackHome }) {
         </div>
       </section>
 
-
-
+      {/* The Custodians of Tradition */}
+      <LeadershipCards />
 
       <Faq />
 
