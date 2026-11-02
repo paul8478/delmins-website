@@ -217,7 +217,7 @@ export default function OurStoryPage({ onBackHome }) {
             {/* Vintage Tag Eyebrow */}
             <div className="vm-card-eyebrow">
               <span className="vm-eyebrow-star">✦</span>
-              <span className="vm-eyebrow-text">दृष्टिकोण · THE GUIDING NORTH STAR</span>
+              <span className="vm-eyebrow-text"> THE GUIDING NORTH STAR</span>
               <span className="vm-eyebrow-star">✦</span>
             </div>
 
@@ -293,7 +293,7 @@ export default function OurStoryPage({ onBackHome }) {
             {/* Vintage Tag Eyebrow */}
             <div className="vm-card-eyebrow">
               <span className="vm-eyebrow-star">✦</span>
-              <span className="vm-eyebrow-text">संकल्प · OUR SACRED PLEDGE</span>
+              <span className="vm-eyebrow-text">OUR SACRED PLEDGE</span>
               <span className="vm-eyebrow-star">✦</span>
             </div>
 
