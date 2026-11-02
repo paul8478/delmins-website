@@ -163,9 +163,9 @@ export default function BlogPage({ onBackHome }) {
       <section className="blog-hero container">
         <div className="blog-hero-header">
           <motion.div className="blog-ornament" {...reveal}>
-            <span className="blog-ornament-line" />
-            <span className="blog-hindi-tag">Blogs</span>
-            <span className="blog-ornament-line" />
+            {/* <span className="blog-ornament-line" /> */}
+            {/* <span className="blog-hindi-tag">Blogs</span> */}
+            {/* <span className="blog-ornament-line" /> */}
           </motion.div>
           <motion.h1 className="blog-title" {...reveal}>
             The Delmins Chronicles

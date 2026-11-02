@@ -449,8 +449,10 @@ section {
   background: #4a150e;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 96px var(--gutter) 40px;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 120px var(--gutter) 40px;
   gap: 6px;
 }
 
@@ -1968,7 +1970,8 @@ section {
 }
 
 .faq-eyebrow-pill {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   align-items: center;
   gap: 7px;
   font-family: var(--sans);
@@ -1981,7 +1984,7 @@ section {
   border: 1px solid rgba(190, 145, 55, 0.38);
   padding: 5px 12px;
   border-radius: 999px;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
   box-shadow: 0 2px 6px rgba(140, 42, 18, 0.04);
 }
 
@@ -1997,6 +2000,7 @@ section {
   color: #4a150e;
   line-height: 1.18;
   letter-spacing: -0.01em;
+  text-align: center;
   margin: 0 0 16px;
 }
 
@@ -2011,6 +2015,7 @@ section {
 .faq-divider {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   margin: 16px 0 20px;
 }
@@ -2033,7 +2038,8 @@ section {
   font-size: 14.5px;
   line-height: 1.68;
   color: #5c4738;
-  margin: 0 0 28px;
+  text-align: center;
+  margin: 0 auto 28px;
   max-width: 440px;
 }
 
@@ -2924,9 +2930,9 @@ section {
   .footer-retro-contact-col {
     border-left: none;
     border-right: none;
-    border-top: 1px solid rgba(217, 168, 95, 0.25);
-    border-bottom: 1px solid rgba(217, 168, 95, 0.25);
-    padding: 20px 0;
+    /* border-top: 1px solid rgba(217, 168, 95, 0.25);
+    border-bottom: 1px solid rgba(217, 168, 95, 0.25); */
+    padding: 10px 0;
   }
 
   .footer-retro-slogan-col {
@@ -3864,6 +3870,17 @@ section {
 @media (max-width: 860px) {
   .vm-cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .vm-card-eyebrow,
+  .vm-card-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .vm-card-eyebrow {
+    padding-right: 0;
   }
 }
 
@@ -4941,6 +4958,19 @@ section {
     max-width: 420px;
     margin: 0 auto;
   }
+
+  .heritage-eyebrow,
+  .heritage-title {
+    text-align: center;
+  }
+
+  .heritage-eyebrow {
+    align-self: center;
+  }
+
+  .heritage-divider {
+    justify-content: center;
+  }
 }
 
 /* ---------- Our Certificates Section (6 Rectangular Retro Cards) ---------- */
@@ -5867,6 +5897,10 @@ section {
 }
 
 @media (max-width: 900px) {
+  .hero2-section {
+    padding-top: 130px;
+  }
+
   .hero2-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -5876,6 +5910,51 @@ section {
     order: -1;
     max-width: 380px;
     margin: 0 auto;
+  }
+
+  .hero2-eyebrow,
+  .hero2-title-en {
+    justify-content: center;
+  }
+
+  .hero2-title-hi {
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero2-actions {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .hero2-btn-primary,
+  .hero2-btn-secondary {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 12px 10px;
+    font-size: 13.5px;
+    white-space: nowrap;
+  }
+
+  .hero2-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .hero2-stat-box {
+    min-width: 0;
+    padding: 10px 6px;
+  }
+
+  .hero2-stat-val {
+    font-size: 22px;
+  }
+
+  .hero2-stat-lbl {
+    font-size: 9px;
+    letter-spacing: 0.08em;
   }
 }
 

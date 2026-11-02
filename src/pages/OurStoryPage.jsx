@@ -18,12 +18,8 @@ export default function OurStoryPage({ onBackHome }) {
       <section className="bazaar-heritage-section container">
         {/* Top Ornament / Subheading */}
         <div className="bazaar-heritage-header">
-          <div className="bazaar-ornament">
-            <span></span>
-            <i>✦</i>
-            <span></span>
-          </div>
-          <p className="bazaar-hindi-tag">OUR HERITAGE · OUR STORY</p>
+
+          {/* <p className="bazaar-hindi-tag">OUR HERITAGE · OUR STORY</p> */}
           <h1 className="bazaar-title">It Started with a Thought.<br />To Build Something Pure. Something Real.</h1>
           <p className="bazaar-subtitle">
             Every meaningful journey begins with a belief. At Delmins, ours began with a simple thought: food should be made with care, and people should feel confident about what they bring into their homes.

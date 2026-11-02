@@ -81,7 +81,7 @@ export default function Nav({ currentView, navigate }) {
             initial={{ clipPath: 'circle(0% at 92% 6%)' }}
             animate={{ clipPath: 'circle(150% at 92% 6%)' }}
             exit={{ clipPath: 'circle(0% at 92% 6%)' }}
-            transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
+            transition={{ duration: 0.35, ease: [0.76, 0, 0.24, 1] }}
           >
             {links.map(([l, h, view], i) => (
               <motion.a
@@ -91,9 +91,9 @@ export default function Nav({ currentView, navigate }) {
                   e.preventDefault()
                   handleNav(view, h)
                 }}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 + i * 0.06 }}
+                transition={{ duration: 0.25, delay: 0.08 + i * 0.03 }}
               >
                 {l}
               </motion.a>

@@ -31,12 +31,12 @@ export default function ContactPage({ onBackHome }) {
       <section className="contact-hero container">
         <div className="contact-hero-header">
           <motion.div className="contact-ornament" {...reveal}>
-            <span className="contact-ornament-line" />
-            <span className="contact-hindi-tag">About Us</span>
-            <span className="contact-ornament-line" />
+            {/* <span className="contact-ornament-line" /> */}
+            {/* <span className="contact-hindi-tag">About Us</span> */}
+            {/* <span className="contact-ornament-line" /> */}
           </motion.div>
           <motion.h1 className="contact-title" {...reveal}>
-            Let's Talk Chaat, Export &amp; Partnerships
+            Let's Talk Chat, Export &amp; Partnerships
           </motion.h1>
           <motion.div className="contact-divider" aria-hidden="true" {...reveal}>
             <span className="contact-divider-line" />

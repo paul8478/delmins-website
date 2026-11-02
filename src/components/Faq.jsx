@@ -65,7 +65,7 @@ export default function Faq() {
 
               <motion.h2 className="faq-title" {...reveal}>
                 Questions, <br />
-                <span className="faq-title-accent">answered crisp.</span>
+                <span className="faq-title-accent">answered.</span>
               </motion.h2>
 
               <motion.div className="faq-divider" aria-hidden="true" {...reveal}>

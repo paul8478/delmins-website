@@ -229,4 +229,16 @@
     padding: 6px 14px;
     font-size: 12px;
   }
+
+  /* Remove background glows/shadows on mobile */
+  .hand-cheers-ambient-glow,
+  .hand-cheers-mint-glow,
+  .hand-cheers-radiance {
+    display: none;
+  }
+
+  .hand-cheers-full-img,
+  .hand-cheers-image-stage:hover .hand-cheers-full-img {
+    filter: none;
+  }
 }

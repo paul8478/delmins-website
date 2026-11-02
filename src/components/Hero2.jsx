@@ -69,7 +69,7 @@ export default function Hero2() {
               Hear the Legend
             </button>
             <button onClick={scrollToCraft} className="hero2-btn-secondary">
-              Meet the Regions
+              The Craft
             </button>
           </motion.div>
 
