@@ -450,18 +450,30 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   padding: 120px var(--gutter) 40px;
   gap: 6px;
 }
 
 .mobile-menu a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   font-family: var(--serif);
   font-size: clamp(40px, 11vw, 64px);
   font-weight: 700;
   color: var(--cream);
   line-height: 1.15;
+}
+
+.mobile-menu a::before {
+  content: '';
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
 }
 
 .mobile-menu a:hover {
