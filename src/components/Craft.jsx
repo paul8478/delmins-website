@@ -46,24 +46,92 @@ const steps = [
   },
 ]
 
+// Contents as printed on the kit pack (Product4.png)
+const KIT_ITEMS = [
+  { emoji: '🟠', name: 'Pre-Fried Puris' },
+  { emoji: '🌿', name: 'Mint & Pani Masala' },
+  { emoji: '🫘', name: 'Dried White Peas' },
+]
+
+function CraftCard({ s, i }) {
+  return (
+    <motion.div
+      className="craft-card"
+      {...reveal}
+      transition={{ ...reveal.transition, delay: 0.1 + i * 0.08 }}
+    >
+      {/* Vintage Corner Filigree Brackets */}
+      <span className="craft-corner top-left" aria-hidden="true" />
+      <span className="craft-corner top-right" aria-hidden="true" />
+      <span className="craft-corner bottom-left" aria-hidden="true" />
+      <span className="craft-corner bottom-right" aria-hidden="true" />
+
+      {/* Subtle Background Watermark Stamp */}
+      <div className="craft-card-seal" aria-hidden="true">✦</div>
+
+      <div className="craft-card-top">
+        <div className="craft-card-icon-medallion">
+          <div className="craft-card-icon">{s.icon}</div>
+        </div>
+        <div className="craft-card-stamp">
+          <span className="craft-card-num">{s.num}</span>
+        </div>
+      </div>
+
+      <h3 className="craft-card-title">{s.title}</h3>
+
+      {/* Retro Ornamental Divider */}
+      <div className="craft-card-divider" aria-hidden="true">
+        <span className="craft-divider-line" />
+        <span className="craft-divider-diamond">✦</span>
+        <span className="craft-divider-line" />
+      </div>
+
+      <p className="craft-card-desc">{s.desc}</p>
+    </motion.div>
+  )
+}
+
 export default function Craft() {
   return (
     <section className="craft-section" id="craft">
       <div className="container craft-grid">
-        {/* Left Side: Arched Spices & Traditional Mortar Artwork */}
-        <motion.div className="craft-visual" {...reveal}>
-          <div className="craft-image-frame">
-            <img
-              src="/Product4.png"
-              alt="Traditional Indian spices and ingredients in brass bowls"
-              className="craft-image"
-            />
-          </div>
-        </motion.div>
+        {/* Left column: kit image + cards 03 & 04 */}
+        <div className="craft-col craft-col-left">
+          <motion.div className="craft-visual craft-order-img1" {...reveal}>
+            <div className="craft-image-frame">
+              <img
+                src="/Product4.png"
+                alt="Delmins pani puri kit with puris, masala mix and dried white peas"
+                className="craft-image"
+              />
+            </div>
+          </motion.div>
 
-        {/* Right Side: Header and 2x2 Feature Cards */}
-        <div className="craft-content">
-          <motion.div className="craft-header" {...reveal}>
+          <div className="craft-cards-grid craft-order-cards2">
+            {steps.slice(2).map((s, i) => (
+              <CraftCard key={s.num} s={s} i={i + 2} />
+            ))}
+          </div>
+
+          {/* What's inside the kit */}
+          <motion.div className="craft-kit-panel craft-order-kit" {...reveal}>
+            <h3 className="craft-kit-title">✦ What&rsquo;s Inside the Kit ✦</h3>
+
+            <ul className="craft-kit-list">
+              {KIT_ITEMS.map(({ emoji, name }) => (
+                <li className="craft-kit-item" key={name}>
+                  <span aria-hidden="true">{emoji}</span>
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </div>
+
+        {/* Right column: header + cards 01 & 02 + spices image */}
+        <div className="craft-col craft-col-right">
+          <motion.div className="craft-header craft-order-header" {...reveal}>
             <span className="craft-eyebrow">THE CRAFT</span>
             <h2 className="craft-title">
               Crafted with Tradition. <br />
@@ -74,45 +142,21 @@ export default function Craft() {
             </p>
           </motion.div>
 
-          <div className="craft-cards-grid">
-            {steps.map((s, i) => (
-              <motion.div
-                key={s.num}
-                className="craft-card"
-                {...reveal}
-                transition={{ ...reveal.transition, delay: 0.1 + i * 0.08 }}
-              >
-                {/* Vintage Corner Filigree Brackets */}
-                <span className="craft-corner top-left" aria-hidden="true" />
-                <span className="craft-corner top-right" aria-hidden="true" />
-                <span className="craft-corner bottom-left" aria-hidden="true" />
-                <span className="craft-corner bottom-right" aria-hidden="true" />
-
-                {/* Subtle Background Watermark Stamp */}
-                <div className="craft-card-seal" aria-hidden="true">✦</div>
-
-                <div className="craft-card-top">
-                  <div className="craft-card-icon-medallion">
-                    <div className="craft-card-icon">{s.icon}</div>
-                  </div>
-                  <div className="craft-card-stamp">
-                    <span className="craft-card-num">{s.num}</span>
-                  </div>
-                </div>
-
-                <h3 className="craft-card-title">{s.title}</h3>
-
-                {/* Retro Ornamental Divider */}
-                <div className="craft-card-divider" aria-hidden="true">
-                  <span className="craft-divider-line" />
-                  <span className="craft-divider-diamond">✦</span>
-                  <span className="craft-divider-line" />
-                </div>
-
-                <p className="craft-card-desc">{s.desc}</p>
-              </motion.div>
+          <div className="craft-cards-grid craft-order-cards1">
+            {steps.slice(0, 2).map((s, i) => (
+              <CraftCard key={s.num} s={s} i={i} />
             ))}
           </div>
+
+          <motion.div className="craft-visual craft-order-img2" {...reveal}>
+            <div className="craft-image-frame craft-image-frame--wide">
+              <img
+                src="/masala.png"
+                alt="Delmins pani puri kit with puris, masala mix and dried white peas"
+                className="craft-image"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

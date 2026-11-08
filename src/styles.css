@@ -4557,9 +4557,68 @@ section {
 
 .craft-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: clamp(36px, 5vw, 64px);
+  align-items: stretch;
+}
+
+/* Each column stacks its image and cards */
+.craft-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.craft-col .craft-header {
+  margin-bottom: 0;
+}
+
+/* Both images fill their column so they're the same width */
+.craft-col .craft-image-frame {
+  max-width: 100%;
+}
+
+/* "What's Inside the Kit" — compact strip under the left cards */
+.craft-kit-panel {
+  background: #fbf0d8;
+  border: 1.5px solid rgba(184, 134, 40, 0.6);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 10px 24px -14px rgba(70, 30, 10, 0.3);
+  text-align: center;
+}
+
+.craft-kit-title {
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-size: 17px;
+  color: #8e2a14;
+  margin: 0 0 10px;
+  line-height: 1.2;
+}
+
+.craft-kit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.craft-kit-item {
+  display: inline-flex;
   align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #0b2e22;
+  border: 1px solid rgba(255, 179, 33, 0.6);
+  border-radius: 999px;
+  font-family: Cabin, system-ui, sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #fff4de;
+  white-space: nowrap;
 }
 
 /* Left Arched Frame for Vintage Spices Artwork */
@@ -4858,7 +4917,24 @@ section {
 @media (max-width: 900px) {
   .craft-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 28px;
+  }
+
+  /* Flatten the two columns so items stack in reading order */
+  .craft-col {
+    display: contents;
+  }
+
+  .craft-order-header { order: 1; }
+  .craft-order-img1 { order: 2; }
+  .craft-order-cards1 { order: 3; }
+  .craft-order-img2 { order: 4; }
+  .craft-order-cards2 { order: 5; }
+  .craft-order-kit { order: 6; }
+
+  .craft-col .craft-image-frame {
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   .craft-cards-grid {
