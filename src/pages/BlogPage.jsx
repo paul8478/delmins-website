@@ -466,7 +466,7 @@ export default function BlogPage({ onBackHome }) {
             <p className="bd-sub">
               Delivered once a month: traditional Indian recipes, folklore from historic sweetmeat makers, and export announcements.
             </p>
-            <form className="bd-form" onSubmit={(e) => { e.preventDefault(); alert('Subscribed to the Delmins Chaat Dispatch!') }}>
+            <form className="bd-form" onSubmit={(e) => { e.preventDefault(); alert('Subscribed to the Delmins Dispatch!') }}>
               <input
                 type="email"
                 required

@@ -5,7 +5,7 @@ import { ease, reveal } from './ease.js'
 
 const notes = {
   Dubai: { flag: '🇦🇪', note: "First export consignment — for the Gulf's big Indian diaspora.", dist: '2,200 km' },
-  Scotland: { flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', note: "Bringing chaat-stall flavour to the UK's northern kitchens.", dist: '6,900 km' },
+  Scotland: { flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', note: "Bringing street-stall flavour to the UK's northern kitchens.", dist: '6,900 km' },
   Canada: { flag: '🇨🇦', note: 'Shipping the burst to Indian homes and stores across Canada.', dist: '11,400 km' },
 }
 

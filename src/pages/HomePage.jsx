@@ -29,7 +29,7 @@ export default function HomePage({ onOpenStory }) {
       <Certificates />
       {/* <ReviewsCarousel /> */}
       {/* <Faq /> */}
-      {/* <OneMorePlate /> */}
+      <OneMorePlate />
     </>
   )
 }

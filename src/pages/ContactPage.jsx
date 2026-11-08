@@ -36,7 +36,7 @@ export default function ContactPage({ onBackHome }) {
             {/* <span className="contact-ornament-line" /> */}
           </motion.div>
           <motion.h1 className="contact-title" {...reveal}>
-            Let's Talk Chat, Export &amp; Partnerships
+            Let's Talk Export &amp; Partnerships
           </motion.h1>
           <motion.div className="contact-divider" aria-hidden="true" {...reveal}>
             <span className="contact-divider-line" />
