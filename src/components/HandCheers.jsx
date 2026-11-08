@@ -51,26 +51,15 @@ export default function HandCheers() {
         viewport={{ once: true, margin: '-60px' }}
         transition={{ duration: 1.05, ease }}
       >
-        {/* Subtle floating breath motion */}
-        <motion.div
-          className="hand-cheers-image-inner"
-          animate={{
-            y: [0, -10, 0],
-          }}
-          transition={{
-            duration: 4.5,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          }}
-        >
+        <div className="hand-cheers-image-inner">
           <img
-            src="/hand.png"
+            src="/hand1.png"
             alt="Two hands cheering with Delmins golden pani puris and fresh mint pani dripping"
             className="hand-cheers-full-img"
             loading="lazy"
             draggable={false}
           />
-        </motion.div>
+        </div>
 
         {/* Central subtle collision radiance */}
         <div className="hand-cheers-radiance" aria-hidden="true" />
