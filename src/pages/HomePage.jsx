@@ -12,6 +12,7 @@ import Certificates from '../components/Certificates.jsx'
 import ReviewsCarousel from '../components/ReviewsCarousel.jsx'
 import Faq from '../components/Faq.jsx'
 import OneMorePlate from '../components/OneMorePlate.jsx'
+import KanpurRoots from '../components/KanpurRoots.jsx'
 
 export default function HomePage({ onOpenStory }) {
   return (
@@ -24,6 +25,7 @@ export default function HomePage({ onOpenStory }) {
 
       {/* <Global /> */}
       <HandCheers />
+      <KanpurRoots />
       <Marquee2 />
 
       <Certificates />

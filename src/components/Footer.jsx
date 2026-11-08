@@ -128,7 +128,7 @@ export default function Footer({ navigate }) {
               <div className="footer-retro-contact">
                 <a href="mailto:namaste@delminsfoods.com">namaste@delminsfoods.com</a>
                 <a href="mailto:export@delminsfoods.com">export@delminsfoods.com</a>
-                <span>Uttar Pradesh, India</span>
+                <span>Kanpur, Uttar Pradesh, India</span>
               </div>
             </div>
 

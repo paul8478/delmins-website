@@ -1,0 +1,225 @@
+/* ---------- Rooted in Kanpur Section ---------- */
+.kanpur-section {
+  position: relative;
+  background-color: #062519;
+  background-image: radial-gradient(rgba(240, 190, 110, 0.18) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  color: #fff8ed;
+  padding: clamp(70px, 9vw, 120px) 0;
+  overflow: hidden;
+}
+
+.kanpur-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(32px, 5.5vw, 72px);
+  align-items: center;
+}
+
+/* Illustration */
+.kanpur-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.kanpur-frame {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 28px;
+  border: 1.5px solid rgba(217, 168, 95, 0.55);
+  outline: 1px solid rgba(217, 168, 95, 0.22);
+  outline-offset: 6px;
+}
+
+.kanpur-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Round "Made in Kanpur" stamp */
+.kanpur-stamp {
+  position: absolute;
+  right: -18px;
+  bottom: -18px;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: #8e2a14;
+  border: 2px dashed rgba(255, 244, 222, 0.7);
+  box-shadow: 0 0 0 5px #8e2a14, 0 10px 24px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-10deg);
+  color: #fff4de;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.kanpur-stamp-top,
+.kanpur-stamp-bot {
+  font-family: Cabin, system-ui, sans-serif;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.kanpur-stamp-mid {
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-size: 19px;
+  color: #ffb321;
+  margin: 3px 0;
+}
+
+/* Content */
+.kanpur-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.kanpur-eyebrow {
+  font-family: Cabin, system-ui, sans-serif;
+  font-size: clamp(11.5px, 0.85vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #e5b46e;
+  margin-bottom: 10px;
+}
+
+.kanpur-title {
+  font-family: 'Rozha One', 'Yatra One', Georgia, serif;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  line-height: 1.15;
+  color: #f3bf6c;
+  margin: 0 0 16px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.kanpur-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px;
+}
+
+.kanpur-line {
+  width: 42px;
+  height: 1px;
+  background: rgba(229, 180, 110, 0.45);
+}
+
+.kanpur-sparkle {
+  color: #ffb321;
+  font-size: 13px;
+}
+
+.kanpur-text {
+  font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
+  font-size: clamp(15px, 1.05vw, 16.5px);
+  line-height: 1.7;
+  color: rgba(255, 244, 222, 0.82);
+  margin: 0 0 14px;
+}
+
+/* Stat boxes (matches Hero2 style) */
+.kanpur-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.kanpur-stat-box {
+  border: 1px solid rgba(229, 180, 110, 0.28);
+  border-radius: 10px;
+  padding: 12px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.18);
+  min-width: 100px;
+}
+
+.kanpur-stat-val {
+  display: block;
+  font-family: Cabin, system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #f3bf6c;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.kanpur-stat-lbl {
+  display: block;
+  font-family: Cabin, system-ui, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #d6beaa;
+  text-transform: uppercase;
+}
+
+/* Tablet & mobile */
+@media (max-width: 900px) {
+  .kanpur-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .kanpur-frame {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .kanpur-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .kanpur-divider {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .kanpur-stamp {
+    width: 84px;
+    height: 84px;
+    right: -8px;
+    bottom: -14px;
+  }
+
+  .kanpur-stamp-mid {
+    font-size: 15px;
+  }
+
+  .kanpur-stamp-top,
+  .kanpur-stamp-bot {
+    font-size: 8px;
+  }
+
+  .kanpur-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .kanpur-stat-box {
+    min-width: 0;
+    padding: 10px 4px;
+  }
+
+  .kanpur-stat-val {
+    font-size: 17px;
+  }
+
+  .kanpur-stat-lbl {
+    font-size: 8.5px;
+    letter-spacing: 0.08em;
+  }
+}

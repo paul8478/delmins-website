@@ -73,27 +73,6 @@ export default function Hero2() {
             </button>
           </motion.div>
 
-          {/* Bottom 3-Stat Metric Boxes */}
-          <motion.div
-            className="hero2-stats"
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, ease, delay: 0.28 }}
-          >
-            <div className="hero2-stat-box">
-              <span className="hero2-stat-val">12+</span>
-              <span className="hero2-stat-lbl">NAMES</span>
-            </div>
-            <div className="hero2-stat-box">
-              <span className="hero2-stat-val">28</span>
-              <span className="hero2-stat-lbl">STATES SERVED</span>
-            </div>
-            <div className="hero2-stat-box">
-              <span className="hero2-stat-val">∞</span>
-              <span className="hero2-stat-lbl">APPETITE</span>
-            </div>
-          </motion.div>
         </div>
 
         {/* Right Food Showcase Column */}

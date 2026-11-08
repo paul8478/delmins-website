@@ -5877,7 +5877,7 @@ section {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 0;
   flex-wrap: wrap;
 }
 
@@ -5901,22 +5901,22 @@ section {
 }
 
 .hero2-btn-secondary {
-  background: transparent;
-  color: #fff8ed;
+  background: linear-gradient(180deg, #f0be6e 0%, #d49539 100%);
+  color: #38120d;
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
   font-size: 14.5px;
-  font-weight: 600;
-  padding: 12px 26px;
+  font-weight: 700;
+  padding: 13px 28px;
   border-radius: 999px;
-  border: 1.5px solid rgba(229, 180, 110, 0.5);
+  border: none;
   cursor: pointer;
-  transition: all 0.25s ease;
+  box-shadow: 0 8px 24px -4px rgba(224, 164, 66, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .hero2-btn-secondary:hover {
-  background: rgba(229, 180, 110, 0.14);
-  border-color: #f0be6e;
   transform: translateY(-2px);
+  box-shadow: 0 12px 28px -4px rgba(224, 164, 66, 0.5);
 }
 
 .hero2-stats {
