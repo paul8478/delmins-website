@@ -2007,7 +2007,7 @@ section {
 
 .faq-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
-  font-size: clamp(32px, 3.8vw, 46px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: 700;
   color: #4a150e;
   line-height: 1.18;
@@ -3288,7 +3288,7 @@ section {
 .bazaar-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
 
-  font-size: clamp(38px, 5.2vw, 58px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: 700;
   line-height: 1.1;
   color: #4a150e;
@@ -3349,7 +3349,7 @@ section {
 
 .bazaar-content-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
-  font-size: clamp(28px, 3.4vw, 26px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: 700;
   line-height: 1.18;
   color: #4a150e;
@@ -3563,7 +3563,7 @@ section {
 .vm-main-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
 
-  font-size: clamp(38px, 5.2vw, 62px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: 700;
   color: #4a150e;
   line-height: 1.15;
@@ -3668,7 +3668,7 @@ section {
 
 .vm-card-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
-  font-size: clamp(30px, 3.5vw, 42px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: 700;
   color: #154530;
   line-height: 1.15;
@@ -3731,7 +3731,7 @@ section {
   position: relative;
   z-index: 1;
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(16px, 1.3vw, 18px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   font-weight: 600;
   color: #211c18;
   line-height: 1.7;
@@ -4020,7 +4020,7 @@ section {
 .retro-leadership-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
 
-  font-size: clamp(36px, 5vw, 58px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: 700;
   color: #4a150e;
   line-height: 1.15;
@@ -4323,7 +4323,7 @@ section {
 
 .dm-title {
   font-family: var(--serif);
-  font-size: clamp(34px, 4.6vw, 54px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: 800;
   color: #4a150e;
   line-height: 1.18;
@@ -4629,7 +4629,7 @@ section {
 
 .craft-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
-  font-size: clamp(32px, 4.2vw, 52px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: 900;
   line-height: 1.16;
   color: #7a1f0d;
@@ -5103,7 +5103,7 @@ section {
 
 .cert-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
-  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   font-weight: bolder;
   color: #8e2a14;
   line-height: 1.16;
@@ -6121,7 +6121,7 @@ section {
 .contact-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-weight: 700;
-  font-size: clamp(34px, 4.8vw, 56px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   color: #4a150e;
   line-height: 1.15;
   margin: 0 0 16px;
@@ -6286,7 +6286,7 @@ section {
 .contact-card-h3 {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   color: #4a150e;
   margin: 4px 0 0;
 }
@@ -6719,7 +6719,7 @@ section {
 .blog-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-weight: 700;
-  font-size: clamp(34px, 4.8vw, 56px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   color: #4a150e;
   line-height: 1.15;
   margin: 0 0 16px;
@@ -6873,7 +6873,7 @@ section {
 .bf-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-weight: 700;
-  font-size: clamp(24px, 3.2vw, 36px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   color: #4a150e;
   line-height: 1.22;
   margin: 0 0 12px;
@@ -6986,7 +6986,7 @@ section {
 .bc-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-weight: 700;
-  font-size: 19.5px;
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   color: #4a150e;
   line-height: 1.3;
   margin: 0 0 10px;
@@ -7220,7 +7220,7 @@ section {
 .bd-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
   font-weight: 700;
-  font-size: clamp(24px, 3.4vw, 36px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   color: #fffdf8;
   margin: 0 0 10px;
 }

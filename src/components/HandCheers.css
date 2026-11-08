@@ -76,7 +76,7 @@
 .hand-cheers-title {
   font-family: 'Rozha One', 'Yatra One', Georgia, serif;
 
-  font-size: clamp(32px, 5.2vw, 56px);
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
   color: #8F2F18;
   line-height: 1.15;
   margin: 0 0 16px;
