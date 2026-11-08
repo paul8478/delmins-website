@@ -2047,7 +2047,7 @@ section {
 
 .faq-subtitle {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 14.5px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.68;
   color: #5c4738;
   text-align: center;
@@ -2139,7 +2139,7 @@ section {
 
 .faq-concierge-text {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 12.5px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.55;
   color: #655042;
   margin: 0 0 16px;
@@ -2398,7 +2398,7 @@ section {
 
 .faq-answer-text {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 13.8px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.68;
   color: #544133;
   margin: 0 0 14px;
@@ -2642,7 +2642,7 @@ section {
 
 .one-more-plate-sub {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(14px, 1.2vw, 16px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   color: #8c422c;
   line-height: 1.6;
   max-width: 520px;
@@ -3298,7 +3298,7 @@ section {
 
 .bazaar-subtitle {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(15px, 1.3vw, 18px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   color: rgba(14, 27, 20, 0.75);
   line-height: 1.6;
   max-width: 620px;
@@ -3359,7 +3359,7 @@ section {
 
 .bazaar-content-p {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(15px, 1.25vw, 17px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   color: rgba(14, 27, 20, 0.82);
   line-height: 1.68;
   margin: 0 0 16px;
@@ -3375,7 +3375,7 @@ section {
 
 .bazaar-quote-box p {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(15px, 1.3vw, 18px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   font-style: italic;
   /* font-weight: 700; */
   color: #611e0e;
@@ -3742,7 +3742,7 @@ section {
 
 .vm-card-body {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 15px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   color: rgba(33, 28, 24, 0.82);
   line-height: 1.75;
   margin: 0;
@@ -3911,7 +3911,7 @@ section {
 .vm-ticket-desc {
   margin: 0;
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 13px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.55;
   color: rgba(33, 28, 24, 0.68);
 }
@@ -3948,6 +3948,7 @@ section {
 .vm-footer-quote {
   margin: 0;
   font-style: italic;
+  font-size: clamp(15px, 1.08vw, 13.5px);
 }
 
 @media (max-width: 860px) {
@@ -4247,7 +4248,7 @@ section {
 
 .retro-card-quote p {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 16px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   color: #5a2a17;
   line-height: 1.45;
   margin: 0;
@@ -4256,7 +4257,7 @@ section {
 /* Description */
 .retro-card-desc {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 14px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   color: rgba(33, 28, 24, 0.82);
   line-height: 1.65;
   margin: 0 0 20px;
@@ -4401,7 +4402,7 @@ section {
 
 .dm-timeline-content p {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(14.5px, 1.2vw, 16.5px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.7;
   color: rgba(30, 32, 31, 0.82);
   margin: 0;
@@ -4639,7 +4640,7 @@ section {
 
 .craft-subtitle {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(14.5px, 1.2vw, 16.5px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.68;
   color: #3e2e22;
   font-weight: 500;
@@ -4849,7 +4850,7 @@ section {
 
 .craft-card-desc {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 13.5px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.62;
   color: rgba(255, 245, 225, 0.88);
   margin: 0;
@@ -5011,7 +5012,7 @@ section {
 
 .heritage-text {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(15px, 1.05vw, 16.5px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.68;
   color: #534135;
   margin: 0 0 16px;
@@ -5026,7 +5027,7 @@ section {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(14.5px, 1.05vw, 16px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.58;
   color: #782610;
 }
@@ -5131,7 +5132,7 @@ section {
 
 .cert-subtitle {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: clamp(15px, 1.1vw, 16.5px);
+  font-size: clamp(15px, 1.08vw, 13.5px);
   color: #554336;
   line-height: 1.62;
   margin: 0 auto;
@@ -5351,7 +5352,7 @@ section {
 
 .cert-card-desc {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 11px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.48;
   color: #6a574a;
   margin: 0;
@@ -6292,7 +6293,7 @@ section {
 
 .contact-card-p {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 14.5px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.65;
   color: rgba(14, 27, 20, 0.7);
   margin: 0 0 20px;
@@ -6880,7 +6881,7 @@ section {
 
 .bf-sub {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 15.5px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.6;
   color: rgba(14, 27, 20, 0.72);
   margin: 0 0 18px;
@@ -6897,7 +6898,7 @@ section {
 .bf-quote-box p {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
   font-style: italic;
-  font-size: 14.5px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   color: #5a2a17;
   margin: 0;
   line-height: 1.5;
@@ -6993,7 +6994,7 @@ section {
 
 .bc-desc {
   font-family: Cabin, Noto Serif Devanagari, system-ui, sans-serif;
-  font-size: 14px;
+  font-size: clamp(15px, 1.08vw, 13.5px);
   line-height: 1.55;
   color: rgba(14, 27, 20, 0.7);
   margin: 0 0 18px;
